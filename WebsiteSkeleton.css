@@ -1,0 +1,51 @@
+body{ 
+	font-family: helvetica;
+	background-color: white;
+	margin: 10px;
+}
+*{
+	box-sizing: border-box;
+}
+header{
+	background-color: lightblue;
+}
+h1{
+	color: black;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+h2{
+	color: black;
+	text-align: left-side;
+	letter-spacing: 2px;
+}
+p{
+	color: black;
+	text-align: left-side;
+	letter-spacing: 2px;
+}
+section{
+	margin: 10px;
+}
+.navigation{
+	background-color: lightblue;
+	overflow: hidden;
+}
+
+.navigation a{
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 16px;
+}
+.navigation a:hover{
+	background-color: white;
+	color: black;
+}
+.navigation a.active{
+	background: white;
+	color: black;
+}

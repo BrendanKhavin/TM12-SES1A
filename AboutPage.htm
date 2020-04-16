@@ -1,57 +1,21 @@
-<!-- This is just creating a very basic html file, its a skeleton file that we will change and develop over time. -->
 <!DOCTYPE html>
 <html> 
-	<title>Online Medical Centre</title> <!-- This is the title of the webpage that you will see on the tab -->
-	<!-- The section below styles all the items enclosed within the body tags -->
-	<style> 
-body{ 
-			font-family: helvetica;
-			background-color: white;
-			margin: 10px;
-		}
-		#headingBar{
-			background-color: lightblue;
-		}
-		h1{
-			text: bold;
-			color: black;
-			text-align: left;
-			padding: 20px;
-		}
-		p{
-			color: black;
-			text-align: left-side;
-			letter-spacing: 2px;
-			padding-left: 5px;
-			padding-right: 5px;
-		}
-		button{
-			background-color: lightblue;
-			border: 2px solid white;
-			color: white;
-			padding: 15px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			cursor: pointer;
-			transition duration: 0.4s;
-			align: right;
-		}
-		button:hover{
-			background-color: white;
-			color: black;
-		}
-	</style>
+	<head>
+		<title>Online Medical Centre</title> 
+		<link rel="stylesheet" href="standard.css">
+	</head>	
 	<body>
-		<div id="headingBar">
-			<h1>Online Medical Centre</h1> <!-- Heading of the website on the page itself -->
-			
-			<button type="button" onclick="window.location.href='D:/GitHub/TM12-SES1A/AboutPage.htm'">About</button> <!--linked button locally but won't work elsewise -->
-		</div>
-		
-		<h2>About</h2> 
-		
-		<p>This page is about the online medical centre.</p> <!-- Some text that is displayed below the heading -->
+		<header>
+			<h1>Online Medical Centre</h1>
+			<div class="navigation"> <!-- need to change the onclick -->
+				<a href="#contact" onclick="window.location.href='D:/GitHub/TM12-SES1A/ContactPage.htm'">Contact</a>
+				<a href="#about" onclick="window.location.href='D:/GitHub/TM12-SES1A/AboutPage.htm'">About</a> 
+				<a class="active" href="#home" onclick="window.location.href='D:/GitHub/TM12-SES1A/MainLandingPage.htm'">Home</a> 
+			</div>
+		</header>
+		<section>
+			<h2>About</h2> 
+			<p>This page is about the online medical centre.</p> 
+		</section>
 	</body>
 </html>
