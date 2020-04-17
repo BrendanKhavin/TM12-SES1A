@@ -1,26 +1,23 @@
+*{ /*This applies to all elements */
+	box-sizing: border-box;
+}
 body{ 
 	font-family: helvetica;
 	background-color: white;
 	margin: 10px;
-}
-*{
-	box-sizing: border-box;
 }
 header{
 	background-color: lightblue;
 }
 h1{
 	color: black;
-	text-align: left;
-	padding-top: 10px;
-	padding-left: 10px;
 }
 h2{
 	color: black;
 	text-align: left-side;
 	letter-spacing: 2px;
 }
-p{
+p #body{ 
 	color: black;
 	text-align: left-side;
 	letter-spacing: 2px;
@@ -49,3 +46,20 @@ section{
 	background: white;
 	color: black;
 }
+.navigation #websiteHeading{
+	float: left;
+	background-color: lightblue;
+	color: black;
+	font-size: 30px;
+}
+p #footer {
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+}
+footer{
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+}
+

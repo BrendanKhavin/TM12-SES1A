@@ -2,20 +2,24 @@
 <html> 
 	<head>
 		<title>Online Medical Centre</title>
-		<link rel="stylesheet" href="standard.css">
+		<link rel="stylesheet" href="WebsiteSkeleton.css">
 	</head>	
 	<body>
 		<header>
-			<h1>Online Medical Centre</h1>
+			<!-- <h1>online medical centre</h1> -->
 			<div class="navigation"> <!-- need to change the onclick -->
-				<a href="#contact" onclick="window.location.href='D:/GitHub/TM12-SES1A/ContactPage.htm'">Contact</a>
-				<a href="#about" onclick="window.location.href='D:/GitHub/TM12-SES1A/AboutPage.htm'">About</a> 
-				<a class="active" href="#home" onclick="window.location.href='D:/GitHub/TM12-SES1A/MainLandingPage.htm'">Home</a> 
+				<a href="#contact" onclick="window.location.href='ContactPage.htm'">Contact</a>
+				<a href="#about" onclick="window.location.href='AboutPage.htm'">About</a> 
+				<a href="#home" onclick="window.location.href='MainLandingPage.htm'">Home</a>
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MainLandingPage.htm'"><b>Online Medical Centre</b></a>
 			</div>
 		</header>
 		<section>
 			<h2>Welcome to the Online Medical Centre</h2>
-			<p>This is an online medical centre.</p>
-		
+			<p id="body">This is an online medical centre.</p>
+		</section>
+		<footer>
+			<p id="footer">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
+		</footer>
 	</body>
 </html>
