@@ -24,10 +24,16 @@ p #body{
 }
 section{
 	margin: 10px;
+	position: relative;
+	top: 70px;
 }
 .navigation{
 	background-color: lightblue;
 	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 
 .navigation a{
@@ -47,19 +53,24 @@ section{
 	color: black;
 }
 .navigation #websiteHeading{
-	float: left;
+	float: left; 
+	align-self: left;
 	background-color: lightblue;
 	color: black;
 	font-size: 30px;
 }
-p #footer {
-	background-color: lightblue;
-	color: black;
-	text-align: center;
-}
+/* p #footer { */
+	/* background-color: lightblue; */
+	/* color: black; */
+	/* text-align: center; */
+/* } */
 footer{
 	background-color: lightblue;
 	color: black;
 	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	font-size: 10px;
 }
-
