@@ -8,6 +8,11 @@ body{
 }
 header{
 	background-color: lightblue;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 h1{
 	color: black;
@@ -72,5 +77,5 @@ footer{
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	font-size: 10px;
+	font-size: 8px;
 }
