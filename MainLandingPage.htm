@@ -7,18 +7,23 @@
 	</head>	
 	<body>
 		<header>
-			<div class="navigation"> <!-- need to change the onclick -->
-				<a href="#" onclick="window.location.href='LoginPage.html'"><i class="fas fa-user"></i> Login</a>
-				<a href="#" onclick="window.location.href='ContactPage.html'"><i class="fas fa-envelope"></i> Contact</a>
-				<a href="#" onclick="window.location.href='AboutPage.html'"><i class="fas fa-info-circle"></i> About</a> 
-				<a href="#" onclick="window.location.href='index.html'"><i class="fas fa-home"></i> Home</a>
-				<a id="websiteHeading" href="#" onclick="window.location.href='index.html'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+			<!-- fixed top navigation bar -->
+			<div class="navigation">
+				<a href="#" onclick="window.location.href='LoginPage.htm'"><i class="fas fa-user"></i> Login</a>
+				<a href="#" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i> Contact</a>
+				<a href="#" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i> About</a> 
+				<a href="#" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i> Home</a>
+				<a id="websiteHeading" href="#" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 			</div>
 		</header>
-		<section>
+		
+		<!-- content body of website -->
+		<div class="body">
 			<h2>Welcome to the Online Medical Centre</h2>
-			<p id="body">This is an online medical centre.</p>
-		</section>
+			<p>This is an online medical centre.</p>
+		</div>
+		
+		<!-- fixed footer bar -->
 		<footer>
 			<p id="footer">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
 		</footer>

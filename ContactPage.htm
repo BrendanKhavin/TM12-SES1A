@@ -6,29 +6,82 @@
 		<link rel="stylesheet" href="WebsiteSkeleton.css">
 	</head>	
 	<body>
+		<!-- fixed top navigation bar -->
 		<header>
-			<div class="navigation"> <!-- need to change the onclick -->
-				<a href="#login" onclick="window.location.href='LoginPage.html'"><i class="fas fa-user"></i> Login</a>
-				<a href="#contact" onclick="window.location.href='ContactPage.html'"><i class="fas fa-envelope"></i> Contact</a>
-				<a href="#about" onclick="window.location.href='AboutPage.html'"><i class="fas fa-info-circle"></i> About</a> 
-				<a href="#home" onclick="window.location.href='index.html'"><i class="fas fa-home"></i> Home</a>
-				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='index.html'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+			<div class="navigation"> 
+				<a href="#login" onclick="window.location.href='LoginPage.htm'"><i class="fas fa-user"></i> Login</a>
+				<a href="#contact" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i> Contact</a>
+				<a href="#about" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i> About</a> 
+				<a href="#home" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i> Home</a>
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 			</div>
 		</header>
-		<section>
-			<h2>Contact</h2> 
-			<p>This is the contact page for the Online Medical Centre. Here you can find the necessary contact details or fill out a feedback form.</p> 
-		</section>
-		<section>
-			<h3>Contact Details</h2>
-			<p>Email: </p>
-			<div>
-			<p>Phone Number:</p>
-			<ul>
-				<li>number1</li>
-				<li>number2(24-hour availability)</li>
-			</ul>
-		</section>
+		
+		<!-- content body of website -->
+		<div class="body">
+			<!-- page info description -->
+			<section>
+				<h2>Contact</h2> 
+				<p>This is the contact page for the Online Medical Centre. Here you can find the necessary contact details or fill out a feedback form.</p> 
+			</section>
+			
+			<!-- static contact details -->
+			<section>
+				<h3>Contact Details</h2>
+				<p>Email </p>
+				<div>
+				<p>Phone Number (For urgent issues, please use the 24-hour Hotline)</p>
+				<ul>
+					<li>number1 (Available Monday to Friday from 8AM till 5PM)</li>
+					<li>number2(24-hour Hotline)</li>
+				</ul>
+				<p>Fax </p>
+				<p>Office Address</p>
+			</section>
+			
+			<!-- enquiry form for feedback or alt method of customer contact -->
+			<section>
+				<h3>Enquiry Form</h3>
+				<div class="enquiryForm">
+					<form> <!-- need to write php script to deal with the form once it is submitted, maybe email to a mail box? -->
+						<div required>
+							<p>What is your enquiry about?</p> <!--enquiry category -->
+							<label class="radio-inline">
+								<input type="radio" name="radioOption">Option 1
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="radioOption">Option 2
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="radioOption">Option 3
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="radioOption">Option 4
+							</label>
+						</div><br>
+						
+						<!-- customer details section-->
+						<label for="firstName">First Name</label><br>
+							<input type="text" id="firstName" name="FirstName" placeholder="Enter your first name" required><br>
+							
+						<label for="lastName">Last Name</label><br>
+							<input type="text" id="lastName" name="LastName" placeholder="Enter your last name" required><br>
+							
+						<label for="email">Email</label><br>
+							<input type="email" id="email" name="Email" placeholder="Enter your email" required><br>
+							
+						<label for="phone">Phone Number</label><br>
+							<input type="number" id="phoneNumber" name="PhoneNumber" min="10" max="10"><br>
+							
+						<label for="message">Message</label><br>
+							<textarea id="message" name="message" placeholder="Write your message here."></textarea><br>
+							
+						<input type="submit" value="Submit"><br>
+					</form>
+			</section>
+		</div>
+		
+		<!-- fixed footer bar -->
 		<footer>
 			<p id="footer">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
 		</footer>

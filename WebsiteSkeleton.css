@@ -1,81 +1,59 @@
-*{ /*This applies to all elements */
-	box-sizing: border-box;
-}
-body{ 
+/* Apply to whole doc */
+* {
 	font-family: helvetica;
-	background-color: white;
-	margin: 10px;
-}
-header{
-	background-color: lightblue;
-	overflow: hidden;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-}
-h1{
-	color: black;
-}
-h2{
-	color: black;
-	text-align: left-side;
-	letter-spacing: 2px;
-}
-p #body{ 
-	color: black;
-	text-align: left-side;
-	letter-spacing: 2px;
-}
-section{
-	margin: 10px;
-	position: relative;
-	top: 70px;
-}
-.navigation{
-	background-color: lightblue;
-	overflow: hidden;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
 }
 
-.navigation a{
+/* top navigation bar */
+.navigation {
+	overflow: hidden;
+	background-color: lightblue;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.navigation a {
 	float: right;
+	display: block;
 	color: white;
 	text-align: center;
-	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-decoration: none;
-	font-size: 16px;
 }
-.navigation a:hover{
-	background-color: white;
-	color: black;
-}
-.navigation a.active{
+.navigation a:hover {
 	background: white;
 	color: black;
 }
 .navigation #websiteHeading{
-	float: left; 
-	align-self: left;
+	float: left;
 	background-color: lightblue;
 	color: black;
 	font-size: 30px;
 }
-/* p #footer { */
-	/* background-color: lightblue; */
-	/* color: black; */
-	/* text-align: center; */
-/* } */
-footer{
-	background-color: lightblue;
-	color: black;
+
+/*fixed footer bar */
+footer {
 	text-align: center;
 	position: fixed;
-	left: 0;
 	bottom: 0;
+	left: 0;
+	right: 0;
 	width: 100%;
-	font-size: 8px;
+	font-size: 10px;
+	background-color: lightblue;
+	color: black;
+}
+
+/* body of the site = everything outside the navbar and footer bar */
+.body{
+	margin-top: 65px;
+	margin-bottom: 53px;
+	margin-left: 20px;
+	margin-right: 20px;
+	overflow: auto;
+	background-color: white;
 }
