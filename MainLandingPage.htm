@@ -6,16 +6,31 @@
 		<link rel="stylesheet" href="WebsiteSkeleton.css">
 	</head>	
 	<body>
+		<!-- fixed top navigation bar -->
 		<header>
-			<!-- fixed top navigation bar -->
-			<div class="navigation">
-				<a href="#" onclick="window.location.href='LoginPage.htm'"><i class="fas fa-user"></i> Login</a>
-				<a href="#" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i> Contact</a>
-				<a href="#" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i> About</a> 
-				<a href="#" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i> Home</a>
-				<a id="websiteHeading" href="#" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+			<div class="navigation" id="nav"> 
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a href="#login" onclick="window.location.href='LoginPage.htm'"><i class="fas fa-user"></i><b> Login</b></a>
+				<a href="#contact" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i><b> Contact</b></a>
+				<a href="#about" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a> 
+				<a href="#home" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 			</div>
 		</header>
+		
+		<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+		<script>
+			function myFunction() {
+				var x = document.getElementById("nav");
+				if (x.className === "navigation") {
+					x.className += " responsive";
+				} else {
+					x.className = "navigation";
+				}
+			}
+		</script>
 		
 		<!-- content body of website -->
 		<div class="body">

@@ -23,6 +23,7 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	text-decoration: none;
+	font-size: 18px;
 }
 .navigation a:hover {
 	background: white;
@@ -34,7 +35,33 @@
 	color: black;
 	font-size: 30px;
 }
+.navigation .icon{
+	display: none;
+}
 
+/* responsive top nav bar */
+@media screen and (max-width: 800px) {
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+ 
 /*fixed footer bar */
 footer {
 	text-align: center;
@@ -55,5 +82,63 @@ footer {
 	margin-left: 20px;
 	margin-right: 20px;
 	overflow: auto;
+	top: 7
 	background-color: white;
+}
+
+/* enquiry form */
+.radio-inline{
+	padding-right: 30px;
+}
+input[type=text], textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=email] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=number] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=submit] {
+	float: right;
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-family: helvetica;
+	font-size: 15px;
+}
+input[type=submit]:hover {
+	float: right;
+	background-color: #45a049;
+	font-family: helvetica;
+	font-size: 15px;
+}
+
+/* horizontal line for breaking up sections */
+hr {
+	border: 0.5px solid lightgrey;
 }

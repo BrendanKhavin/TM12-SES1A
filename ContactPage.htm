@@ -4,18 +4,34 @@
 	<head>
 		<title>Online Medical Centre</title> 
 		<link rel="stylesheet" href="WebsiteSkeleton.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>	
 	<body>
 		<!-- fixed top navigation bar -->
 		<header>
-			<div class="navigation"> 
-				<a href="#login" onclick="window.location.href='LoginPage.htm'"><i class="fas fa-user"></i> Login</a>
-				<a href="#contact" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i> Contact</a>
-				<a href="#about" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i> About</a> 
-				<a href="#home" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i> Home</a>
+			<div class="navigation" id="nav"> 
 				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a href="#login" onclick="window.location.href='LoginPage.htm'"><i class="fas fa-user"></i><b> Login</b></a>
+				<a href="#contact" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i><b> Contact</b></a>
+				<a href="#about" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a> 
+				<a href="#home" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 			</div>
 		</header>
+		
+		<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+		<script>
+			function myFunction() {
+				var x = document.getElementById("nav");
+				if (x.className === "navigation") {
+					x.className += " responsive";
+				} else {
+					x.className = "navigation";
+				}
+			}
+		</script>
 		
 		<!-- content body of website -->
 		<div class="body">
@@ -25,19 +41,23 @@
 				<p>This is the contact page for the Online Medical Centre. Here you can find the necessary contact details or fill out a feedback form.</p> 
 			</section>
 			
+			<hr>
+			
 			<!-- static contact details -->
 			<section>
-				<h3>Contact Details</h2>
-				<p>Email </p>
+				<h3>Contact Details</h3>
+				<p><b>Email</b> email@email.com</p>
 				<div>
-				<p>Phone Number (For urgent issues, please use the 24-hour Hotline)</p>
+				<p><b>Phone Number</b> (For urgent issues, please use the 24-hour Hotline)</p>
 				<ul>
 					<li>number1 (Available Monday to Friday from 8AM till 5PM)</li>
-					<li>number2(24-hour Hotline)</li>
+					<li>number2	(24-hour Hotline)</li>
 				</ul>
-				<p>Fax </p>
-				<p>Office Address</p>
+				<p><b>Fax</b> faxNumber</p>
+				<p><b>Office Address</b> 123 officeAddress street city state postcode</p>
 			</section>
+			
+			<hr>
 			
 			<!-- enquiry form for feedback or alt method of customer contact -->
 			<section>
@@ -71,10 +91,10 @@
 							<input type="email" id="email" name="Email" placeholder="Enter your email" required><br>
 							
 						<label for="phone">Phone Number</label><br>
-							<input type="number" id="phoneNumber" name="PhoneNumber" min="10" max="10"><br>
+							<input type="number" id="phoneNumber" name="PhoneNumber" placeholder="Enter your phone number" min="10" max="10"><br>
 							
 						<label for="message">Message</label><br>
-							<textarea id="message" name="message" placeholder="Write your message here."></textarea><br>
+							<textarea id="message" name="message" placeholder="Write your message here" style="height:200px"></textarea><br>
 							
 						<input type="submit" value="Submit"><br>
 					</form>
