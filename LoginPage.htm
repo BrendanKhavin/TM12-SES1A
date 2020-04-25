@@ -1,9 +1,12 @@
+<!-- LOGIN PAGE -->
+
 <!DOCTYPE html>
 <html>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<head>
-		<title>Online Medical Centre</title> 
+		<title>Online Medical Centre</title>
 		<link rel="stylesheet" href="WebsiteSkeleton.css">
+		<script src="WebsiteScript.js"></script>
 	</head>	
 	<body>
 		<!-- fixed top navigation bar -->
@@ -14,28 +17,42 @@
 				<a href="#contact" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i><b> Contact</b></a>
 				<a href="#about" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a> 
 				<a href="#home" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				
+				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
 					<i class="fa fa-bars"></i>
 				</a>
 			</div>
 		</header>
 		
-		<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
-		<script>
-			function myFunction() {
-				var x = document.getElementById("nav");
-				if (x.className === "navigation") {
-					x.className += " responsive";
-				} else {
-					x.className = "navigation";
-				}
-			}
-		</script>
-		
 		<!-- content body of website -->
 		<div class="body">
 			<h2>Login</h2> 
 			<p>This page is intended for login.</p> 
+			
+			<form class="login" method="post"> <!--need to add php to form and js form validation-->
+				<div class="login" id="login">
+					<!--login details section + forgot password, remember me and login button -->
+					<label for="email"><b>Email</b></label>
+						<input type="email" placeholder="Enter your email" name="email" required>
+					
+					<label id="password" for="password"><b>Password</b></label>
+					<span class="forgotPassword"><a href="#forgotPassword" onclick="windows.location.href='ForgotPasswordPage.htm'">Forgot password?</a></span>
+						<input type="password" placeholder="Enter your password" name="password" required>
+						
+					<button type="submit">Login</button>
+					
+					<label>
+						<input type="checkbox" name="rememberMe">Remember me <!-- need to write js for remember me function or remove it -->
+					</label>
+				</div>
+				
+				<!-- bottom of login form for cancel/clear form and link to sign up -->
+				<div class="login">
+					<button type="button" class="cancelbtn">Cancel</button> <!--need to link up with js to clear the login form when clicked -->
+					<span class="signup">Don't have an account? <a href="#signup" onclick="windows.location.href='SignUpPage.htm'">Create one here.</a></span> <!--need to confirm signup page file name -->
+				</div>
+			</form>
 		</div>
 		
 		<!-- fixed footer bar -->

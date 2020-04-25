@@ -1,3 +1,5 @@
+/* CSS FOR WHOLE WEBSITE */
+
 /* Apply to whole doc */
 * {
 	font-family: helvetica;
@@ -83,14 +85,14 @@ footer {
 	margin-right: 20px;
 	overflow: auto;
 	top: 7
-	background-color: white;
+	/* background-color: white; */
 }
 
 /* enquiry form */
-.radio-inline{
+.enquiry.radio-inline{
 	padding-right: 30px;
 }
-input[type=text], textarea {
+.enquiry input[type=text], textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -100,7 +102,7 @@ input[type=text], textarea {
 	margin-bottom: 16px;
 	resize: vertical;
 }
-input[type=email] {
+.enquiry input[type=email] {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -110,7 +112,7 @@ input[type=email] {
 	margin-bottom: 16px;
 	resize: vertical;
 }
-input[type=number] {
+.enquiry input[type=number] {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -120,7 +122,7 @@ input[type=number] {
 	margin-bottom: 16px;
 	resize: vertical;
 }
-input[type=submit] {
+.enquiry input[type=submit] {
 	float: right;
 	background-color: #4CAF50;
 	color: white;
@@ -131,7 +133,7 @@ input[type=submit] {
 	font-family: helvetica;
 	font-size: 15px;
 }
-input[type=submit]:hover {
+.enquiry input[type=submit]:hover {
 	float: right;
 	background-color: #45a049;
 	font-family: helvetica;
@@ -141,4 +143,62 @@ input[type=submit]:hover {
 /* horizontal line for breaking up sections */
 hr {
 	border: 0.5px solid lightgrey;
+}
+
+/*login form || cannot get background and border colours to show, need to fix*/
+.login form {
+	border: 3px solid #f1f1f1;
+}
+.login {
+  padding: 16px;
+}
+.login span.forgotPassword {
+  float: right;
+  font-size: 14px;
+}
+.login #password {
+	float: left;
+}
+.login input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.login button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+.login button:hover {
+  opacity: 0.8;
+}
+.login .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.login span.signup {
+  float: right;
+  font-size: 14px;
+}
+.login .signup a{
+	text-decoration: none;
+	color: blue;
+}
+@media screen and (max-width: 300px) {
+  .login span.signup {
+    display: block;
+    float: none;
+  }
+  .login .cancelbtn {
+    width: 100%;
+  }
 }

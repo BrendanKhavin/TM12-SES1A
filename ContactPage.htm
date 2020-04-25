@@ -1,10 +1,12 @@
+<!-- CONTACT PAGE -->
+
 <!DOCTYPE html>
 <html> 
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<head>
-		<title>Online Medical Centre</title> 
+		<title>Online Medical Centre</title>
 		<link rel="stylesheet" href="WebsiteSkeleton.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="WebsiteScript.js"></script>
 	</head>	
 	<body>
 		<!-- fixed top navigation bar -->
@@ -15,23 +17,13 @@
 				<a href="#contact" onclick="window.location.href='ContactPage.htm'"><i class="fas fa-envelope"></i><b> Contact</b></a>
 				<a href="#about" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a> 
 				<a href="#home" onclick="window.location.href='MainLandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				
+				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
 					<i class="fa fa-bars"></i>
 				</a>
 			</div>
 		</header>
-		
-		<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
-		<script>
-			function myFunction() {
-				var x = document.getElementById("nav");
-				if (x.className === "navigation") {
-					x.className += " responsive";
-				} else {
-					x.className = "navigation";
-				}
-			}
-		</script>
 		
 		<!-- content body of website -->
 		<div class="body">
@@ -63,7 +55,7 @@
 			<section>
 				<h3>Enquiry Form</h3>
 				<div class="enquiryForm">
-					<form> <!-- need to write php script to deal with the form once it is submitted, maybe email to a mail box? -->
+					<form class="enquiry" method="post"> <!-- need to write php script to deal with the form once it is submitted, maybe email to a mail box? and need to add in js form validation -->
 						<div required>
 							<p>What is your enquiry about?</p> <!--enquiry category -->
 							<label class="radio-inline">
