@@ -14,6 +14,7 @@
 	left: 0;
 	right: 0;
 	width: 100%;
+	vertical-align: middle;
 }
 .navigation a {
 	float: right;
@@ -41,8 +42,8 @@
 	display: none;
 }
 
-/* responsive top nav bar */
-@media screen and (max-width: 800px) {
+/* responsive top nav bar || change to toggle menu if screen too small*/
+@media screen and (max-width: 900px) {
   .navigation a:not(:first-child) {display: none;}
   .navigation a.icon {
     float: right;
@@ -50,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .navigation.responsive {position: relative;}
   .navigation.responsive a.icon {
     position: absolute;
@@ -65,15 +66,32 @@
 }
  
 /*fixed footer bar */
-footer {
+.footer {
 	text-align: center;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
-	font-size: 10px;
+	
 	background-color: lightblue;
+	color: black;
+}
+#copyRight {
+	float: right;
+	margin-right: 35px;
+	font-size: 12px;
+}
+.etcDetails{
+	float: left;
+	margin-top: 9px;
+	margin-left: 35px;
+}
+.etcDetails a{
+	margin-right: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
 	color: black;
 }
 
@@ -89,10 +107,10 @@ footer {
 }
 
 /* enquiry form */
-.enquiry.radio-inline{
+.enquiryForm .radio-inline{
 	padding-right: 30px;
 }
-.enquiry input[type=text], textarea {
+.enquiryForm input[type=text], textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -102,7 +120,7 @@ footer {
 	margin-bottom: 16px;
 	resize: vertical;
 }
-.enquiry input[type=email] {
+.enquiryForm input[type=email] {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -112,7 +130,7 @@ footer {
 	margin-bottom: 16px;
 	resize: vertical;
 }
-.enquiry input[type=number] {
+.enquiryForm input[type=number] {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -122,7 +140,7 @@ footer {
 	margin-bottom: 16px;
 	resize: vertical;
 }
-.enquiry input[type=submit] {
+.enquiryForm input[type=submit] {
 	float: right;
 	background-color: #4CAF50;
 	color: white;
@@ -132,8 +150,9 @@ footer {
 	cursor: pointer;
 	font-family: helvetica;
 	font-size: 15px;
+	margin-bottom: 11px;
 }
-.enquiry input[type=submit]:hover {
+.enquiryForm input[type=submit]:hover {
 	float: right;
 	background-color: #45a049;
 	font-family: helvetica;
@@ -145,60 +164,140 @@ hr {
 	border: 0.5px solid lightgrey;
 }
 
-/*login form || cannot get background and border colours to show, need to fix*/
-.login form {
+/*login form */
+form #login{
 	border: 3px solid #f1f1f1;
+	max-width: 600px;
+	margin: auto;
 }
 .login {
-  padding: 16px;
+	padding: 16px;
+	max-width: 600px;
+	margin: auto;
+}
+.login #loginTitle {
+	font-size: 22px;
 }
 .login span.forgotPassword {
-  float: right;
-  font-size: 14px;
+	float: right;
+	font-size: 14px;
 }
 .login #password {
 	float: left;
 }
 .login input[type=email], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
 }
 .login button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-size: 14px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
 }
 .login button:hover {
-  opacity: 0.8;
+	opacity: 0.8;
 }
 .login .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
 }
 .login span.signup {
-  float: right;
-  font-size: 14px;
+	float: right;
+	font-size: 14px;
+	padding-top: 16px;
 }
 .login .signup a{
 	text-decoration: none;
 	color: blue;
 }
-@media screen and (max-width: 300px) {
+/* responsive login || change layout if screen too small*/
+@media screen and (max-width: 700px) {
   .login span.signup {
     display: block;
     float: none;
+	text-align: center;
   }
   .login .cancelbtn {
     width: 100%;
   }
+}
+
+/* forgot password */
+form #forgotPsw{
+	border: 3px solid #f1f1f1;
+	max-width: 600px;
+	margin: auto;
+}
+.forgotPsw {
+	padding: 16px;
+	max-width: 600px;
+	margin: auto;
+}
+.forgotPsw #forgotPswTitle {
+	font-size: 22px;
+}
+.forgotPsw input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.forgotPsw button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.forgotPsw button:hover {
+	opacity: 0.8;
+}
+.forgotPsw .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.forgotPsw span.signup {
+	float: right;
+	font-size: 14px;
+	padding-top: 16px;
+}
+.forgotPsw .signup a{
+	text-decoration: none;
+	color: blue;
+}
+/* responsive forgot password || change layout if screen too small*/
+@media screen and (max-width: 700px) {
+  .forgotPsw span.signup {
+    display: block;
+    float: none;
+	text-align: center;
+  }
+  .forgotPsw .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* return to login from forgot password */
+span.returnToLogin p{
+	font-size: 30px;
+	display: inline;
+}
+span.returnToLogin a{
+	text-decoration: none;
 }

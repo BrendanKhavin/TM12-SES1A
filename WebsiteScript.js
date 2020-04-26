@@ -18,9 +18,11 @@ function navbarResize() {
 //remember me function for login
 
 
-
 //form validation for enquiry
 
 
 //form validation for sign up
 
+
+
+//form validation for enquiry + check that email is valid for forgot password 

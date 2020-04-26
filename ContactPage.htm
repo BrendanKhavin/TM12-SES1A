@@ -54,25 +54,26 @@
 			<!-- enquiry form for feedback or alt method of customer contact -->
 			<section>
 				<h3>Enquiry Form</h3>
-				<div class="enquiryForm">
-					<form class="enquiry" method="post"> <!-- need to write php script to deal with the form once it is submitted, maybe email to a mail box? and need to add in js form validation -->
-						<div required>
-							<p>What is your enquiry about?</p> <!--enquiry category -->
-							<label class="radio-inline">
-								<input type="radio" name="radioOption">Option 1
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="radioOption">Option 2
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="radioOption">Option 3
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="radioOption">Option 4
-							</label>
-						</div><br>
-						
-						<!-- customer details section-->
+				<form class="enquiryForm" id="enquiryForm" method="post"> <!-- need to write php script to deal with the form once it is submitted, maybe email to a mail box? and need to add in js form validation -->
+					<div class="enquiryForm" id="enquiryForm">
+					<div required>
+						<p>What is your enquiry about?</p> <!--enquiry category -->
+						<label class="radio-inline">
+							<input type="radio" name="radioOption">Option 1
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioOption">Option 2
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioOption">Option 3
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radioOption">Option 4
+						</label>
+					</div><br>
+					
+					<!-- customer details section-->
+					
 						<label for="firstName">First Name</label><br>
 							<input type="text" id="firstName" name="FirstName" placeholder="Enter your first name" required><br>
 							
@@ -87,15 +88,22 @@
 							
 						<label for="message">Message</label><br>
 							<textarea id="message" name="message" placeholder="Write your message here" style="height:200px"></textarea><br>
-							
+						
 						<input type="submit" value="Submit"><br>
-					</form>
+					</div>
+				</form>
 			</section>
-		</div>
+		
 		
 		<!-- fixed footer bar -->
-		<footer>
-			<p id="footer">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
-		</footer>
+		<div class="footer">
+			<div class="etcDetails">
+				<a href="Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
+				<a href="PrivacyPage.htm">Privacy</a>
+				<a href="SecurityPage.htm">Security</a>
+			</div>
+			
+			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
+		</div>
 	</body>
 </html>

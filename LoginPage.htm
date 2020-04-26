@@ -27,37 +27,46 @@
 		
 		<!-- content body of website -->
 		<div class="body">
-			<h2>Login</h2> 
-			<p>This page is intended for login.</p> 
-			
-			<form class="login" method="post"> <!--need to add php to form and js form validation-->
+		<br>
+		<br>
+			<form id="login" class="login" method="post"> <!--need to add php to form and js form validation-->
 				<div class="login" id="login">
+					<label for="loginTitle" id="loginTitle"><b>Login</b></label>
+						<p>This page is intended for login.</p>
+
+					<br>
+
 					<!--login details section + forgot password, remember me and login button -->
 					<label for="email"><b>Email</b></label>
 						<input type="email" placeholder="Enter your email" name="email" required>
 					
 					<label id="password" for="password"><b>Password</b></label>
-					<span class="forgotPassword"><a href="#forgotPassword" onclick="windows.location.href='ForgotPasswordPage.htm'">Forgot password?</a></span>
+					<span class="forgotPassword"><a href="ForgotPasswordPage.htm">Forgot password?</a></span>
 						<input type="password" placeholder="Enter your password" name="password" required>
-						
+					
 					<button type="submit">Login</button>
 					
-					<label>
-						<input type="checkbox" name="rememberMe">Remember me <!-- need to write js for remember me function or remove it -->
-					</label>
+					<label><input type="checkbox" name="rememberMe">Remember me</label> <!-- need to write js for remember me function or remove it -->
+					
 				</div>
 				
 				<!-- bottom of login form for cancel/clear form and link to sign up -->
-				<div class="login">
+				<div class="login" style="background-color:#f1f1f1">
 					<button type="button" class="cancelbtn">Cancel</button> <!--need to link up with js to clear the login form when clicked -->
-					<span class="signup">Don't have an account? <a href="#signup" onclick="windows.location.href='SignUpPage.htm'">Create one here.</a></span> <!--need to confirm signup page file name -->
+					<span class="signup">Don't have an account? <a href="SignUpPage.htm">Create one here.</a></span> <!--need to confirm signup page file name -->
 				</div>
 			</form>
 		</div>
 		
 		<!-- fixed footer bar -->
-		<footer>
-			<p id="footer">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
-		</footer>
+		<div class="footer">
+			<div class="etcDetails">
+				<a href="Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
+				<a href="PrivacyPage.htm">Privacy</a>
+				<a href="SecurityPage.htm">Security</a>
+			</div>
+			
+			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
+		</div>
 	</body>
 </html>
