@@ -1,0 +1,47 @@
+<!-- ABOUT PAGE -->
+
+<!DOCTYPE html>
+<html> 
+	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
+	<head>
+		<title>Online Medical Centre</title>
+		<link rel="stylesheet" href="WebsiteSkeleton.css">
+		<script src="WebsiteScript.js"></script>
+	</head>	
+	<body>
+		<!-- fixed top navigation bar -->
+		<header>
+			<div class="navigation" id="nav"> 
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<div class="navbar-right">
+					<a href="#home" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+					<a href="#about" onclick="window.location.href='MAIN-AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a>
+					<a href="#contact" onclick="window.location.href='MAIN-ContactPage.htm'"><i class="fas fa-envelope"></i><b> Contact</b></a>
+					<a href="#login" onclick="window.location.href='MAIN-LoginPage.htm'"><i class="fas fa-user"></i><b> Login</b></a>
+				</div>
+				
+				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</header>
+		
+		<!-- content body of website -->
+		<div class="body">
+			<h2>About</h2> 
+			<p>This page is about the online medical centre.</p> 
+		</div>
+		
+		<!-- fixed footer bar -->
+		<div class="footer">
+			<div class="etcDetails">
+				<a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
+				<a href="MAIN-PrivacyPage.htm">Privacy</a>
+				<a href="MAIN-SecurityPage.htm">Security</a>
+			</div>
+			
+			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
+		</div>
+	</body>
+</html>

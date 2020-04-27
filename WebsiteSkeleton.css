@@ -17,7 +17,7 @@
 	vertical-align: middle;
 }
 .navigation a {
-	float: right;
+	float: left;
 	display: block;
 	color: white;
 	text-align: center;
@@ -38,6 +38,10 @@
 	color: black;
 	font-size: 30px;
 }
+.navbar-right{
+	float:right;
+}
+
 .navigation .icon{
 	display: none;
 }
@@ -45,6 +49,9 @@
 /* responsive top nav bar || change to toggle menu if screen too small*/
 @media screen and (max-width: 900px) {
   .navigation a:not(:first-child) {display: none;}
+  .navbar-right a {
+	display: none;
+  }
   .navigation a.icon {
     float: right;
     display: block;
