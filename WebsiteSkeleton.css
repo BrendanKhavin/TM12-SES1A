@@ -59,14 +59,14 @@
 }
 
 @media screen and (max-width: 900px) {
-  .navigation.responsive {position: relative;}
+  .navigation.responsive {}
   .navigation.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
   .navigation.responsive a {
-    float: none;
+    float: left;
     display: block;
     text-align: left;
   }
@@ -80,7 +80,6 @@
 	left: 0;
 	right: 0;
 	width: 100%;
-	
 	background-color: lightblue;
 	color: black;
 }
@@ -88,6 +87,19 @@
 	float: right;
 	margin-right: 35px;
 	font-size: 12px;
+}
+/* stack footer items if the screen is too small */
+@media screen and (max-width: 700px) {
+  .footer .etcDetails {
+    display: block;
+    float: none;
+	text-align: center;
+  }
+  .footer #copyRight {
+	display: block;
+    float: none;
+	text-align: center;
+  }
 }
 .etcDetails{
 	float: left;
@@ -113,6 +125,9 @@
 	/* background-color: white; */
 }
 
+/* ALL THE STYLING ITEMS BELOW ARE NOT APPLIED IN SKELETONSTRUCTURE.HTM. 
+ BUT IF YOU ADD ANY ITEMS WHOSE STYLING DOES NOT EXIST, ADD IT BELOW. */
+ 
 /* enquiry form */
 .enquiryForm .radio-inline{
 	padding-right: 30px;
