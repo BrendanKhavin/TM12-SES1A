@@ -88,19 +88,6 @@
 	margin-right: 35px;
 	font-size: 12px;
 }
-/* stack footer items if the screen is too small */
-@media screen and (max-width: 700px) {
-  .footer .etcDetails {
-    display: block;
-    float: none;
-	text-align: center;
-  }
-  .footer #copyRight {
-	display: block;
-    float: none;
-	text-align: center;
-  }
-}
 .etcDetails{
 	float: left;
 	margin-top: 9px;
@@ -112,6 +99,20 @@
 	text-decoration: none;
 	font-size: 12px;
 	color: black;
+}
+/* stack footer items if the screen is too small */
+@media screen and (max-width: 700px) {
+  .footer .etcDetails {
+    display: block;
+    float: none;
+	text-align: center;
+  }
+  .footer #copyRight {
+	display: block;
+    float: none;
+	text-align: center;
+	margin-right: 0;
+  }
 }
 
 /* body of the site = everything outside the navbar and footer bar */
@@ -129,56 +130,97 @@
  BUT IF YOU ADD ANY ITEMS WHOSE STYLING DOES NOT EXIST, ADD IT BELOW. */
  
 /* enquiry form */
+form #enquiryForm{
+	border: 3px solid #f1f1f1;
+	max-width: 800px;
+	margin: auto;
+}
+.enquiryForm {
+	padding: 16px;
+	max-width: 800px;
+	margin: auto;
+}
+.enquiryForm #enquiryFormTitle {
+	font-size: 22px;
+}
 .enquiryForm .radio-inline{
-	padding-right: 30px;
+	display: block;
+	line-height: 2;
 }
 .enquiryForm input[type=text], textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
-	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+
 }
 .enquiryForm input[type=email] {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
-	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
 }
-.enquiryForm input[type=number] {
+.enquiryForm input[type=tel] {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
-	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
 }
-.enquiryForm input[type=submit] {
-	float: right;
+.enquiryForm button {
+	width: 100%;
 	background-color: #4CAF50;
 	color: white;
 	padding: 12px 20px;
 	border: none;
-	border-radius: 4px;
 	cursor: pointer;
 	font-family: helvetica;
 	font-size: 15px;
 	margin-bottom: 11px;
 }
-.enquiryForm input[type=submit]:hover {
-	float: right;
+.enquiryForm #submitbtn:hover {
 	background-color: #45a049;
 	font-family: helvetica;
 	font-size: 15px;
+}
+.enquiryForm .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.enquiryForm .cancelbtn:hover {
+	opacity: 0.8;
+}
+.enquiryForm span.FAQMenu {
+	float: right;
+	font-size: 14px;
+	padding-top: 16px;
+}
+.enquiryForm .FAQMenu a{
+	text-decoration: none;
+	color: blue;
+}
+.enquiryForm #enquiryFooter {
+	background-color:#f1f1f1;
+}
+/* responsive enquiry form|| change layout if screen too small*/
+@media screen and (max-width: 700px) {
+  .enquiryForm span.FAQMenu {
+    display: block;
+    float: none;
+	text-align: center;
+  }
+  .enquiryForm .cancelbtn {
+    width: 100%;
+  }
 }
 
 /* horizontal line for breaking up sections */
