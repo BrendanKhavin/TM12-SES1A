@@ -13,7 +13,7 @@ function navbarResize() {
 //form validation for login
 
 
-//cancel button in login
+//cancel button in login and forgot password 
 
 //remember me function for login
 
@@ -26,3 +26,6 @@ function navbarResize() {
 
 
 //form validation for enquiry + check that email is valid for forgot password 
+
+//forgot password, need to get so submit button sends email
+
