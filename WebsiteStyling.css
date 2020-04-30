@@ -123,14 +123,34 @@
 	margin-right: 20px;
 	overflow: auto;
 	top: 7
-	/* background-color: white; */
+}
+
+/* body content format, centres all the content regardless of screen size */
+.contentContainer {
+	padding: 16px;
+	max-width: 800px;
+	margin: auto;
+	line-height: 1.5;
 }
 
 /* ALL THE STYLING ITEMS BELOW ARE NOT APPLIED IN SKELETONSTRUCTURE.HTM. 
  BUT IF YOU ADD ANY ITEMS WHOSE STYLING DOES NOT EXIST, ADD IT BELOW. */
- 
+
+/*welcome page */
+#welcomeImgLib img {
+	padding: 10px;
+	margin: auto; 
+}
+ span.enquiryPage {
+	font-size: 16px;
+	padding-top: 16px;
+}
+.enquiryPage a{
+	text-decoration: none;
+	color: blue;
+}
 /* enquiry form */
-form #enquiryForm{
+#enquiryForm{
 	border: 3px solid #f1f1f1;
 	max-width: 800px;
 	margin: auto;
@@ -191,12 +211,12 @@ form #enquiryForm{
 	font-family: helvetica;
 	font-size: 15px;
 }
-.enquiryForm .cancelbtn {
+.enquiryForm .resetbtn {
 	width: auto;
 	padding: 10px 18px;
 	background-color: #f44336;
 }
-.enquiryForm .cancelbtn:hover {
+.enquiryForm .resetbtn:hover {
 	opacity: 0.8;
 }
 .enquiryForm span.FAQMenu {
@@ -218,7 +238,7 @@ form #enquiryForm{
     float: none;
 	text-align: center;
   }
-  .enquiryForm .cancelbtn {
+  .enquiryForm .resetbtn {
     width: 100%;
   }
 }
@@ -229,7 +249,7 @@ hr {
 }
 
 /*login form */
-form #login{
+#login{
 	border: 3px solid #f1f1f1;
 	max-width: 600px;
 	margin: auto;
@@ -297,7 +317,7 @@ form #login{
 }
 
 /* forgot password */
-form #forgotPsw{
+#forgotPsw{
 	border: 3px solid #f1f1f1;
 	max-width: 600px;
 	margin: auto;
