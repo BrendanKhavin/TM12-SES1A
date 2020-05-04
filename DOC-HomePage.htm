@@ -13,14 +13,14 @@
 		<!-- fixed top navigation bar -->
 		<header>
 			<div class="navigation" id="nav"> 
-				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
-				<div class="navbar-right">
+				<a href="#websiteHeading" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<!-- <div class="navbar-right"> -->
 					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-					<a href="#about" onclick="window.location.href='AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a>
-					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> Contact</b></a>
+					<a href="#calendar" onclick="window.location.href='DOC-CalendarPage.htm'"><i class="fas fa-calendar-alt"></i><b> Calendar</b></a>
+					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
 					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
-				</div>
-
+				<!-- </div> -->
+				
 				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
 				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
 					<i class="fa fa-bars"></i>
@@ -30,7 +30,7 @@
 		
 		<!-- content body of website -->
 		<div class="body">
-			<section="contentContainer">
+			<section class="contentContainer">
 				<h2>Doctor Home</h2> 
 				<p>This page is the home page for doctors.</p> 
 				
