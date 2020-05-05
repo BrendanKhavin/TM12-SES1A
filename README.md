@@ -18,8 +18,6 @@ The file titled **WebsiteSkeletonStructure-[DO-NOT-EDIT].htm** is a skeleton fil
 
 There are some forms in the website that will collect data and sent it to a database. On successful and not successful data entry, different pages may be shown accordingly. Pages that have been marked as **[Success]** indicate the page that the user is taken to upon successful data entry, the pages marked as **[Failure]** indicate the page the user is taken to for unsuccessful data entry.
 
-**favicon.ico** is the icon file that is used within the website, it is displayed next to the website name in the tab of a browser when the website is open.
-
 ## Access links to associated documents 
 Link to GoogleDoc (Assessment 1): https://drive.google.com/file/d/1FgEbFyOF5jvtokhMUGlnfgt2DARjua4G/view
 
