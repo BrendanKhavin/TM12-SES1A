@@ -19,29 +19,39 @@
 .navigation a {
 	float: left;
 	display: block;
-	color: white;
+	color: black;
 	text-align: center;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 28px;
 }
 .navigation a:hover {
 	background: white;
 	color: black;
 }
 .navigation #websiteHeading{
-	float: left;
 	background-color: lightblue;
-	color: black;
-	font-size: 30px;
 }
-.navbar-right{
-	float:right;
+.navbar-right {
+	float: right;
+	display: block;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
 }
-
+.navbar-right a{
+	float:left;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
 .navigation .icon{
 	display: none;
 }
@@ -55,6 +65,9 @@
   .navigation a.icon {
     float: right;
     display: block;
+	position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
@@ -66,8 +79,13 @@
     top: 0;
   }
   .navigation.responsive a {
-    float: left;
+    float: none;
     display: block;
+    text-align: left;
+  }
+  .navigation.responsive .navbar-right {
+	float: none;
+	display: block;
     text-align: left;
   }
 }
@@ -133,7 +151,7 @@
 	line-height: 1.5;
 }
 
-/* ALL THE STYLING ITEMS BELOW ARE NOT APPLIED IN SKELETONSTRUCTURE.HTM. 
+/* ALL THE STYLING ITEMS BELOW ARE NOT APPLIED IN WEBSITESKELETONSTRUCTURE.HTM. 
  BUT IF YOU ADD ANY ITEMS WHOSE STYLING DOES NOT EXIST, ADD IT BELOW. */
 
 /*welcome page */
@@ -175,6 +193,7 @@
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+	background: #f1f1f1;
 
 }
 .enquiryForm input[type=email] {
@@ -185,6 +204,7 @@
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+	background: #f1f1f1;
 }
 .enquiryForm input[type=tel] {
 	width: 100%;
@@ -194,6 +214,7 @@
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+	background: #f1f1f1;
 }
 .enquiryForm button {
 	width: 100%;
@@ -276,6 +297,7 @@ hr {
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+	background: #f1f1f1;
 }
 .login button {
 	background-color: #4CAF50;
@@ -337,6 +359,7 @@ hr {
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+	background: #f1f1f1;
 }
 .forgotPsw button {
 	background-color: #4CAF50;
@@ -384,4 +407,77 @@ span.returnToLogin p{
 }
 span.returnToLogin a{
 	text-decoration: none;
+}
+
+/*register form */
+#register{
+	max-width: 800px;
+	margin: auto;
+	border: 3px solid #f1f1f1;
+	
+}
+.register {
+	padding: 16px;
+	max-width: 800px;
+	margin: auto;
+}
+.register #registerTitle {
+	font-size: 22px;
+}
+.register .userTypeBtn{
+	width: 100%;
+}
+.register button {
+	background-color: lightblue;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: 1px solid lightblue;
+	cursor: pointer;
+	font-size: 16px;
+	float: left;
+	
+}
+.register button:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+.userTypeBtn #docbtn{
+	width: 50%;
+}
+.userTypeBtn #patbtn {
+	width: 50%;
+}
+.userTypeBtn:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.register span.login {
+    text-align: center;
+	width: 100%;
+	display: block;
+	padding: 10px;
+}
+
+/* responsive registration form || resize items if window is small*/
+@media screen and (max-width: 700px) {
+  .register .userTypeBtn button {
+    width: 100%;
+	display: block;
+	float: none;
+	margin: 4px 0;
+  }
+  .userTypeBtn #docbtn{
+	width: 100%;
+}
+	.userTypeBtn #patbtn {
+	width: 100%;
+}
+  .register span.login {
+    display: block;
+    float: none;
+	text-align: center;
+  }
 }
