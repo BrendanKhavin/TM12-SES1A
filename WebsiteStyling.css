@@ -185,7 +185,7 @@
 	display: block;
 	line-height: 2;
 }
-.enquiryForm input[type=text], textarea {
+.enquiryForm input[type=text], textarea, input[type=email], input[type=tel]  {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -195,26 +195,6 @@
 	resize: vertical;
 	background: #f1f1f1;
 
-}
-.enquiryForm input[type=email] {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	background: #f1f1f1;
-}
-.enquiryForm input[type=tel] {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	background: #f1f1f1;
 }
 .enquiryForm button {
 	width: 100%;
@@ -424,60 +404,54 @@ span.returnToLogin a{
 .register #registerTitle {
 	font-size: 22px;
 }
-.register .userTypeBtn{
+.register .radio-inline{
+	display: block;
+	line-height: 2;
+}
+.register input[type=email], input[type=password], input[type=tel], input[type=text] {
 	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
 }
 .register button {
-	background-color: lightblue;
+	background-color: #4CAF50;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
-	border: 1px solid lightblue;
+	border: none;
 	cursor: pointer;
-	font-size: 16px;
-	float: left;
-	
+	width: 100%;
+	font-size: 14px;
 }
 .register button:hover {
-	background-color: white;
-	color: black;
-	border: 1px solid black;
+	opacity: 0.8;
 }
-.userTypeBtn #docbtn{
-	width: 50%;
-}
-.userTypeBtn #patbtn {
-	width: 50%;
-}
-.userTypeBtn:after {
-	content: "";
-	clear: both;
-	display: table;
+.register .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
 }
 .register span.login {
-    text-align: center;
-	width: 100%;
-	display: block;
-	padding: 10px;
+    float: right;
+	font-size: 14px;
+	padding-top: 16px;
 }
-
+.register a{
+	/* text-decoration: none; */
+	color: blue;
+}
 /* responsive registration form || resize items if window is small*/
 @media screen and (max-width: 700px) {
-  .register .userTypeBtn button {
-    width: 100%;
-	display: block;
-	float: none;
-	margin: 4px 0;
-  }
-  .userTypeBtn #docbtn{
-	width: 100%;
-}
-	.userTypeBtn #patbtn {
-	width: 100%;
-}
   .register span.login {
     display: block;
     float: none;
 	text-align: center;
+  }
+  .login .cancelbtn {
+    width: 100%;
   }
 }
