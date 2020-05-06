@@ -13,6 +13,7 @@
 	$apptID = $_POST["ApptID"];
 	$message = $_POST["Message"];
 
+	//need to confirm table name
 	$sql ="INSERT INTO tableName (enquiryType, firstname, lastname, email, phoneNumber, apptID, message) VALUES ('$radioOption','$firstname','$lastname','$email','$phoneNumber','$apptID','$message')";
 	
 	if(mysqli_query($conn, $sql)) {
