@@ -13,13 +13,17 @@ $dbhost = "sql12.freesqldatabase.com";
 $result = mysqli_query($conn,$sql);
 if (mysqli_num_rows($result) == 1) {
 //Pass
-	echo 'login Successful<br>';
 	while($row = $result->fetch_assoc()) {
         $firstname = $row['firstname'];
         $lastname = $row['lastname'];
         $usertype = $row['usertype'];
-    echo 'Hello ' . $firstname . ' ' . $lastname . ' you are a ' . $usertype;
-} }else {
+		if($usertype == "patient"){
+			include("PAT-HomePage.htm");
+		} else {
+			include("DOC-HomePage.htm");
+		}
+	} 
+}else {
 	echo 'Incorrect username or password';
 //Fail
 }
