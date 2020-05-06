@@ -1,10 +1,10 @@
-<!-- REGISTER PAGE -->
+<!-- SIGN UP PAGE 1 -->
 
 <!DOCTYPE html>
-<html>
+<html> 
 	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
 	<head>
-		<title>Sign Up</title><!-- page title in tab -->
+		<title>Sign Up</title> <!-- page title in tab -->
 		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
 		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
@@ -13,7 +13,7 @@
 		<!-- fixed top navigation bar -->
 		<header>
 			<div class="navigation" id="nav"> 
-				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
 					<a href="#home" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
 					<a href="#about" onclick="window.location.href='MAIN-AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a>
@@ -30,14 +30,14 @@
 		
 		<!-- content body of website -->
 		<div class="body">
-			<section class="contentContainer">
+		<section class="contentContainer">
 			
 			<br>
 			
-				<form class="register" action="SignUpHandler.php" method="POST">
+				<form class="register">
 					<div class="register" id="register">
 						<label for="registerTitle" id="registerTitle"><b>Register</b></label>
-							<p>To use the services offered an account is required, register here. </p>
+							<p>This page is intended for registration.</p>
 						
 						<hr>
 						
@@ -45,63 +45,24 @@
 
 						<label for="userType"><b>Are you a doctor or patient?</b></label><br>
 						
-						<label class="radio-inline"><input type="radio" name="radioOption" required>Doctor</label>
-						
-						<label class="radio-inline"><input type="radio" name="radioOption" required>Patient</label>
-						
 						<br>
 						
-						<label for="firstName"><b>First Name</b></label>
-							<input type="text" id="firstName" name="FirstName" placeholder="Enter your first name" required>
-								
-						<label for="lastName"><b>Last Name</b></label>
-							<input type="text" id="lastName" name="LastName" placeholder="Enter your last name" required>
-						
-						<label for="phone"><b>Phone Number</b></label>
-							<input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Enter your phone number">
-					
-						<label for="email"><b>Email</b></label>
-							<input type="email" id="email" name="Email" placeholder="Enter your email" required>
-					
-						<label id="password" for="password"><b>Password</b></label>
-							<input type="password" placeholder="Create your password" name="password" required>
-					
-						<br>
+						<!-- there are 2 user types, they have different registration forms -->
+						<div class="userTypeBtn">
+							<input id="docbtn" type="button" value="Doctor" onclick="window.location.href='MAIN-DoctorSignUpPage.htm'"/>
+							<input id="patbtn" type="button" value="Patient" onclick="window.location.href='MAIN-PatientSignUpPage.htm'"/>
+						</div>
 						
 						<br>
-						
-						<label><input type="checkbox" name="Ts&CsCheck" required>By creating an account you agree to our <a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>.</label><br>
-						
-						<label><input type="checkbox" name="Privacy&SecurityCheck" required>By creating an account you agree to our <a href="MAIN-PrivacyPage.htm">Privacy</a> &amp; <a href="MAIN-SecurityPage.htm">Security</a> policy.</label><br>
-						
-						<label><input type="checkbox" name="marketingCheck">Want to receive marketing emails?</label>
-					
-						<br>
-						
-						<br>
-						
-						<button type="submit">Submit</button>
+			
 					</div>
 					
 					<!-- reminder if users already have an account, they can login -->
 					<div class="register" style="background-color:#f1f1f1">
-						<button type="reset" class="cancelbtn">Cancel</button>
 						<span class="login">Already have an account? <a href="MAIN-LoginPage.htm">Login here.</a></span>
 					</div>
 				</form>
 			</section>
-		</div>
-		
-		<!-- fixed footer bar -->
-		<div class="footer">
-			<div class="etcDetails">
-				<a href="MAIN-FAQPage.htm">FAQ</a>
-				<a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
-				<a href="MAIN-PrivacyPage.htm">Privacy</a>
-				<a href="MAIN-SecurityPage.htm">Security</a>
-			</div>
-			
-			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
 		</div>
 	</body>
 </html>
