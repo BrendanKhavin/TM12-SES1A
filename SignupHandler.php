@@ -13,8 +13,9 @@ $dbhost = "sql12.freesqldatabase.com";
 $username = $_POST['email'];
  $password = $_POST['password'];
  $usertype = 'patient';
+ $DoctorId = 'none'; 
 
- $sql = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `password`, `usertype`) VALUES ('$firstname', '$lastname', '$username','$password', '$usertype')";
+ $sql = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `password`, `usertype`, `doctorid`) VALUES ('$firstname', '$lastname', '$username','$password', '$usertype', '$DoctorId')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Sign up successful, now please log-in";
