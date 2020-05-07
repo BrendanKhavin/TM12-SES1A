@@ -55,17 +55,24 @@
 						<label for="email"><b>Email</b></label>
 							<input type="email" id="email" name="Email" placeholder="Enter your email" required>
 					
-						<label id="password" for="password"><b>Password</b></label>
+						<label for="password"><b>Password</b></label>
 							<input type="password" placeholder="Create your password" name="password" required>
-					
+						
+						<label for="doctorId"><b>Doctor ID</b> (This will be used to verify if you a doctor, verification is completed via a third party service.)</label>
+							<input type="text" placeholder="Enter your doctor ID number" name="doctorId" required>
+						
 						<br>
 						
 						<br>
 						
 						<div class="certUpload">
-							<label for="fileUpload"><b>Please upload your proper accreditation/creditification</b><img src="uploadIcon.png"/></label>
-							<input id="fileUpload" type="file" required>
+							<label for="fileUpload"><b>Accreditation/certification documents (OPTIONAL)</b><img src="uploadIcon.png"/></label>
+							<input id="fileUpload" type="file">
 						</div>
+						
+						<br>
+						
+						<label><input type="checkbox" name="DoctorIDConsentCheck" required>I understand that by creating an account my doctor ID will be verified by a third party service.</label><br>
 						
 						<br>
 						
