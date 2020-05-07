@@ -1,0 +1,106 @@
+<!-- PATIENT SIGN UP PAGE -->
+
+<!DOCTYPE html>
+<html>
+	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
+	<head>
+		<title>Sign Up - Patient</title><!-- page title in tab -->
+		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
+		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
+	</head>	
+	<body>
+		<!-- fixed top navigation bar -->
+		<header>
+			<div class="navigation" id="nav"> 
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<div class="navbar-right">
+					<a href="#home" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+					<a href="#about" onclick="window.location.href='MAIN-AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a>
+					<a href="#contact" onclick="window.location.href='MAIN-ContactPage.htm'"><i class="fas fa-envelope"></i><b> Contact</b></a>
+					<a href="#login" onclick="window.location.href='MAIN-LoginPage.htm'"><i class="fas fa-user"></i><b> Login</b></a>
+				</div>
+				
+				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</header>
+		
+		<!-- content body of website -->
+		<div class="body">
+			<section class="contentContainer">
+			
+			<br>
+			
+				<form class="patientRegister" action="SignUpHandler.php" method="POST">
+					<div class="patientRegister" id="patientRegister">
+						<label for="patientRegisterTitle" id="patientRegisterTitle"><b>Patient Sign Up</b></label>
+							<p>To use the services offered an account is required, register here. </p>
+						
+						<hr>
+						
+						<br>
+						
+						<label for="firstName"><b>First Name</b></label>
+							<input type="text" id="firstName" name="FirstName" placeholder="Enter your first name" required>
+								
+						<label for="lastName"><b>Last Name</b></label>
+							<input type="text" id="lastName" name="LastName" placeholder="Enter your last name" required>
+						
+						<label for="phone"><b>Phone Number</b></label>
+							<input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Enter your phone number">
+					
+						<label for="email"><b>Email</b></label>
+							<input type="email" id="email" name="Email" placeholder="Enter your email" required>
+					
+						<label for="password"><b>Password</b></label>
+							<input type="password" placeholder="Create your password" name="password" required>
+					
+						<br>
+						
+						<br>
+						
+						<label><input type="checkbox" name="Ts&CsCheck" required>By creating an account you agree to our <a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>.</label><br>
+						
+						<br>
+						
+						<label><input type="checkbox" name="Privacy&SecurityCheck" required>By creating an account you agree to our <a href="MAIN-PrivacyPage.htm">Privacy</a> &amp; <a href="MAIN-SecurityPage.htm">Security</a> policy.</label><br>
+						
+						<br>
+						
+						<label><input type="checkbox" name="marketingCheck">Want to receive marketing emails?</label>
+					
+						<br>
+						
+						<br>
+						
+						<button type="submit">Submit</button>
+					</div>
+					
+					<!-- reminder if users already have an account, they can login -->
+					<div class="patientRegister" style="background-color:#f1f1f1">
+						<button type="reset" class="cancelbtn">Cancel</button>
+						<span class="notPatient">Are you a doctor? <a href="MAIN-DoctorSignUpPage.htm">Sign up here.</a></span>
+					</div>
+				</form>
+				
+				<center><p class="login"><em>Already have an account? <a href="MAIN-LoginPage.htm">Login here.</a></em></p></center>
+			
+			</section>
+		</div>
+		
+		<!-- fixed footer bar -->
+		<div class="footer">
+			<div class="etcDetails">
+				<a href="MAIN-FAQPage.htm">FAQ</a>
+				<a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
+				<a href="MAIN-PrivacyPage.htm">Privacy</a>
+				<a href="MAIN-SecurityPage.htm">Security</a>
+			</div>
+			
+			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
+		</div>
+	</body>
+</html>

@@ -1,10 +1,10 @@
-<!-- REGISTER PAGE -->
+<!-- SIGN UP PAGE 1 -->
 
 <!DOCTYPE html>
-<html>
+<html> 
 	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
 	<head>
-		<title>Register</title><!-- page title in tab -->
+		<title>Sign Up</title> <!-- page title in tab -->
 		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
 		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
@@ -13,7 +13,7 @@
 		<!-- fixed top navigation bar -->
 		<header>
 			<div class="navigation" id="nav"> 
-				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
 					<a href="#home" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
 					<a href="#about" onclick="window.location.href='MAIN-AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a>
@@ -30,7 +30,7 @@
 		
 		<!-- content body of website -->
 		<div class="body">
-			<section class="contentContainer">
+		<section class="contentContainer">
 			
 			<br>
 			
@@ -49,8 +49,8 @@
 						
 						<!-- there are 2 user types, they have different registration forms -->
 						<div class="userTypeBtn">
-							<button id="docbtn" onclick="MAIN-DoctorSignUpPage.htm">Doctor</button>
-							<button id="patbtn" onclick="MAIN-PatientSignUpPage.htm">Patient</button>
+							<input id="docbtn" type="button" value="Doctor" onclick="window.location.href='MAIN-DoctorSignUpPage.htm'"/>
+							<input id="patbtn" type="button" value="Patient" onclick="window.location.href='MAIN-PatientSignUpPage.htm'"/>
 						</div>
 						
 						<br>
@@ -63,18 +63,6 @@
 					</div>
 				</form>
 			</section>
-		</div>
-		
-		<!-- fixed footer bar -->
-		<div class="footer">
-			<div class="etcDetails">
-				<a href="MAIN-FAQPage.htm">FAQ</a>
-				<a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
-				<a href="MAIN-PrivacyPage.htm">Privacy</a>
-				<a href="MAIN-SecurityPage.htm">Security</a>
-			</div>
-			
-			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
 		</div>
 	</body>
 </html>

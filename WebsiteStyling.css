@@ -185,7 +185,7 @@
 	display: block;
 	line-height: 2;
 }
-.enquiryForm input[type=text], textarea {
+.enquiryForm input[type=text], textarea, input[type=email], input[type=tel]  {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -195,26 +195,6 @@
 	resize: vertical;
 	background: #f1f1f1;
 
-}
-.enquiryForm input[type=email] {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	background: #f1f1f1;
-}
-.enquiryForm input[type=tel] {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	background: #f1f1f1;
 }
 .enquiryForm button {
 	width: 100%;
@@ -427,7 +407,7 @@ span.returnToLogin a{
 .register .userTypeBtn{
 	width: 100%;
 }
-.register button {
+.register input[type=button]{
 	background-color: lightblue;
 	color: white;
 	padding: 14px 20px;
@@ -438,7 +418,7 @@ span.returnToLogin a{
 	float: left;
 	
 }
-.register button:hover {
+.register input[type=button]:hover {
 	background-color: white;
 	color: black;
 	border: 1px solid black;
@@ -471,13 +451,152 @@ span.returnToLogin a{
   }
   .userTypeBtn #docbtn{
 	width: 100%;
-}
-	.userTypeBtn #patbtn {
+  }
+  .userTypeBtn #patbtn {
 	width: 100%;
-}
+  }
   .register span.login {
     display: block;
     float: none;
 	text-align: center;
+  }
+}
+
+/* patient register form */
+#patientRegister{
+	max-width: 800px;
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.patientRegister {
+	padding: 16px;
+	max-width: 800px;
+	margin: auto;
+}
+.patientRegister #patientRegisterTitle {
+	font-size: 22px;
+}
+.patientRegister input[type=email], input[type=password], input[type=tel], input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.patientRegister button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.patientRegister button:hover {
+	opacity: 0.8;
+}
+.patientRegister .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.patientRegister span.notPatient {
+    float: right;
+	font-size: 15px;
+	padding-top: 16px;
+}
+p .login{
+	font-size: 14px;
+}
+.patientRegister a{
+	/* text-decoration: none; */
+	color: blue;
+}
+/* responsive registration form || resize items if window is small*/
+@media screen and (max-width: 700px) {
+  .patientRegister span.notPatient {
+    display: block;
+    float: none;
+	text-align: center;
+  }
+  .patientRegister .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* patient register form */
+#doctorRegister{
+	max-width: 800px;
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.doctorRegister {
+	padding: 16px;
+	max-width: 800px;
+	margin: auto;
+}
+.doctorRegister #doctorRegisterTitle {
+	font-size: 22px;
+}
+.doctorRegister input[type=email], input[type=password], input[type=tel], input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.doctorRegister button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.doctorRegister button:hover {
+	opacity: 0.8;
+}
+.certUpload > input{
+	display: none;
+	
+}
+.certUpload img{
+	float: right;
+	width: 25px;
+	cursor: pointer;
+}
+.doctorRegister .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.doctorRegister span.notDoctor {
+    float: right;
+	font-size: 15px;
+	padding-top: 16px;
+}
+p .login{
+	font-size: 14px;
+}
+.doctorRegister a{
+	/* text-decoration: none; */
+	color: blue;
+}
+/* responsive registration form || resize items if window is small*/
+@media screen and (max-width: 700px) {
+  .doctorRegister span.notDoctor {
+    display: block;
+    float: none;
+	text-align: center;
+  }
+  .doctorRegister .cancelbtn {
+    width: 100%;
   }
 }
