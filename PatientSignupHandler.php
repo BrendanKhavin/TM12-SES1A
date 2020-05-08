@@ -7,20 +7,20 @@ $dbhost = "sql12.freesqldatabase.com";
  $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
  
 
- $firstname = $_POST['fname'];
- $lastname = $_POST['sname'];
- //username = email
-$username = $_POST['email'];
+ $firstname = $_POST['FirstName'];
+ $lastname = $_POST['LastName'];
+ $phone = $_POST['PhoneNumber'];
+ $username = $_POST['Email'];
  $password = $_POST['password'];
  $usertype = 'patient';
  $DoctorId = 'none'; 
 
- $sql = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `password`, `usertype`, `doctorid`) VALUES ('$firstname', '$lastname', '$username','$password', '$usertype', '$DoctorId')";
+ $sql = "INSERT INTO `users`(`firstname`, `lastname`, 'phonenumber', `username`, `password`, `usertype`, `doctorid`) VALUES ('$firstname', '$lastname', '$phone', '$username','$password', '$usertype', '$DoctorId')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Sign up successful, now please log-in";
+    include("MAIN-SignUpPage-[Success].htm");
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    include("MAIN-SignUpPage-[Failed].htm");
 }
 
 $conn->close();
