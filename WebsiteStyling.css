@@ -170,12 +170,10 @@
 /* enquiry form */
 #enquiryForm{
 	border: 3px solid #f1f1f1;
-	max-width: 800px;
 	margin: auto;
 }
 .enquiryForm {
 	padding: 16px;
-	max-width: 800px;
 	margin: auto;
 }
 .enquiryForm #enquiryFormTitle {
@@ -391,14 +389,12 @@ span.returnToLogin a{
 
 /*register form */
 #register{
-	max-width: 800px;
 	margin: auto;
 	border: 3px solid #f1f1f1;
 	
 }
 .register {
 	padding: 16px;
-	max-width: 800px;
 	margin: auto;
 }
 .register #registerTitle {
@@ -464,13 +460,11 @@ span.returnToLogin a{
 
 /* patient register form */
 #patientRegister{
-	max-width: 800px;
 	margin: auto;
 	border: 3px solid #f1f1f1;
 }
 .patientRegister {
 	padding: 16px;
-	max-width: 800px;
 	margin: auto;
 }
 .patientRegister #patientRegisterTitle {
@@ -529,13 +523,11 @@ p .login{
 
 /* patient register form */
 #doctorRegister{
-	max-width: 800px;
 	margin: auto;
 	border: 3px solid #f1f1f1;
 }
 .doctorRegister {
 	padding: 16px;
-	max-width: 800px;
 	margin: auto;
 }
 .doctorRegister #doctorRegisterTitle {
@@ -599,4 +591,85 @@ p .login{
   .doctorRegister .cancelbtn {
     width: 100%;
   }
+}
+
+/* doctor account settings */
+#editDoctorDetails{
+	margin: auto;
+}
+.editDoctorDetails {
+	margin: auto;
+}
+.editDoctorDetails input[type=email],input[type=password], input[type=tel], input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editDoctorDetails button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.editDoctorDetails button:hover {
+	opacity: 0.8;
+}
+.editDoctorDetails > input{
+	display: none;
+	
+}
+.editDoctorDetails img{
+	float: right;
+	width: 25px;
+	cursor: pointer;
+}
+.editDoctorDetails .cancelbtn {
+	width: 100%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	background-color: #f44336;
+}
+
+/* patient account */
+#editPatientDetails{
+	margin: auto;
+}
+.editPatientDetails {
+	margin: auto;
+}
+.editPatientDetails input[type=email], input[type=password], input[type=tel], input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editPatientDetails button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.editPatientDetails button:hover {
+	opacity: 0.8;
+}
+.editPatientDetails .cancelbtn {
+	width: 100%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	background-color: #f44336;
 }
