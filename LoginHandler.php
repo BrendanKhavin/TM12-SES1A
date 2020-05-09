@@ -19,7 +19,7 @@ if (mysqli_num_rows($result) == 1) {
         $usertype = $row['usertype'];
 		if($usertype == "patient"){
 			include("PAT-HomePage.htm");
-		} else {
+		} else if($usertype == "Doctor"){
 			include("DOC-HomePage.htm");
 		}
 	} 

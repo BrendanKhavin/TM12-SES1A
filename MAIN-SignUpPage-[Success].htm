@@ -1,19 +1,20 @@
-<!-- SUCCESSFUL FORGOT PASSWORD PAGE -->
+<!-- POST ENQUIRY FORM SUBMIT: FAILED DATA ENTRY PAGE -->
+<!-- THIS PAGE IS INTENDED TO BE A THANK YOU MESSAGE THAT IS DISPLAYED IF DATA IS CORRECTLY ENTERED INTO THE DATABASE -->
 
 <!DOCTYPE html>
 <html> 
 	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
 	<head>
-		<title>Forgot Password</title> <!-- page title in tab -->
-		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
-		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
-		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="WebsiteStyling.css">
+		<script src="WebsiteScript.js"></script>
+		<link rel="icon" type="image/x-icon" href="favicon.ico"/>
 	</head>	
 	<body>
 		<!-- fixed top navigation bar -->
 		<header>
 			<div class="navigation" id="nav"> 
-				<a href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.ht'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
 					<a href="#home" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
 					<a href="#about" onclick="window.location.href='MAIN-AboutPage.htm'"><i class="fas fa-info-circle"></i><b> About</b></a>
@@ -30,18 +31,9 @@
 		
 		<!-- content body of website -->
 		<div class="body">
-		
-		<br>
-		
-		<!-- arrow to return to login -->
-		<span class="returnToLogin"><a href="MAIN-LoginPage.htm"><p>&#8592; </p>Return to login</a></span>
-		
-		<br>
 			<section class="contentContainer">
-				<form class="forgotPsw"> <!--need to add php to form and js form validation-->
-					<label for="forgotPsw" id="forgotPswTitle"><b>Forgot Password</b></label>
-					<p><i>Success!</i> We will send you details on how to reset your password.</p>
-				</form>
+                <h2>Congrats! </h2>
+                <p>Sign up was sucessful, please login <a href="MAIN-LoginPage.htm">here.</a></p>
 			</section>
 		</div>
 		
