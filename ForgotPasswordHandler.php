@@ -9,7 +9,7 @@ $dbhost = "sql12.freesqldatabase.com";
 
  $forgotPassword = $_POST['email'];
 //need to confirm table name
- $sql = "INSERT INTO `tableName`(`email`) VALUES ('$forgotPassword)";
+ $sql = "INSERT INTO `forgotPassword`(`email`) VALUES ('$forgotPassword)";
 
 if ($conn->query($sql) === TRUE) {
     include("MAIN-ForgotPasswordPage-[Success].htm");
