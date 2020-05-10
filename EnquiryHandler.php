@@ -14,7 +14,7 @@
 	$message = $_POST["Message"];
 
 	//need to confirm table name
-	$sql ="INSERT INTO tableName (enquiryType, firstname, lastname, email, phoneNumber, apptID, message) VALUES ('$radioOption','$firstname','$lastname','$email','$phoneNumber','$apptID','$message')";
+	$sql ="INSERT INTO enquiryData (enquiryType, firstname, lastname, email, phoneNumber, apptID, message) VALUES ('$radioOption','$firstname','$lastname','$email','$phoneNumber','$apptID','$message')";
 	
 	if(mysqli_query($conn, $sql)) {
 		include("MAIN-postEnquiryForm-[Success].htm");
