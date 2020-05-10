@@ -183,7 +183,40 @@
 	display: block;
 	line-height: 2;
 }
-.enquiryForm input[type=text], textarea, input[type=email], input[type=tel]  {
+.enquiryForm input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background: #f1f1f1;
+
+}
+.enquiryForm textarea  {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background: #f1f1f1;
+
+}
+.enquiryForm input[type=email] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background: #f1f1f1;
+
+}
+.enquiryForm input[type=tel]  {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -268,7 +301,16 @@ hr {
 .login #password {
 	float: left;
 }
-.login input[type=email], input[type=password] {
+.login input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.login input[type=password] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -470,7 +512,34 @@ span.returnToLogin a{
 .patientRegister #patientRegisterTitle {
 	font-size: 22px;
 }
-.patientRegister input[type=email], input[type=password], input[type=tel], input[type=text] {
+.patientRegister input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.patientRegister input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.patientRegister input[type=tel] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.patientRegister input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -533,7 +602,34 @@ p .login{
 .doctorRegister #doctorRegisterTitle {
 	font-size: 22px;
 }
-.doctorRegister input[type=email], input[type=password], input[type=tel], input[type=text] {
+.doctorRegister input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.doctorRegister input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.doctorRegister input[type=tel] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.doctorRegister input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -600,7 +696,34 @@ p .login{
 .editDoctorDetails {
 	margin: auto;
 }
-.editDoctorDetails input[type=email],input[type=password], input[type=tel], input[type=text] {
+.editDoctorDetails input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editDoctorDetails input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editDoctorDetails input[type=tel] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editDoctorDetails input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -645,7 +768,34 @@ p .login{
 .editPatientDetails {
 	margin: auto;
 }
-.editPatientDetails input[type=email], input[type=password], input[type=tel], input[type=text] {
+.editPatientDetails input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editPatientDetails input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editPatientDetails input[type=tel] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: white;
+}
+.editPatientDetails input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
