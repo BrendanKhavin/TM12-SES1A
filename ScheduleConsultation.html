@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    * {
+        box-sizing: border-box;
+      }
+      
+      form{
+    width: 250px;
+     }
+
+     input{
+    width: 100%
+     }
+    textarea{
+    resize: vertical;
+    max-height: 300px;
+     }
+
+    input,textarea{
+    outline-style: none;
+    border: 1px solid#ddd;
+     }
+
+     input:focus,textarea:focus{
+    box-shadow: 0 0 4px rgba(red, green, blue, alpha);
+    border: 1px solid#ddd;
+     }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients describe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Patients describe</h1> 
+    <form action="choosedoctor.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="Usename" id="name" placeholder="username" required> 
+        </div>
+        <div>
+            <label for="bio">Patients current ailment</label>
+         <div>
+             <textarea id="bio" name="bio" placeholder="Describr patients current ailment"></textarea>
+         </div>
+        </div>
+        <div>
+            <label for="file">File OR Image</label>
+            <input id="file" type="file" name="file">
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
