@@ -7,13 +7,13 @@ $dbhost = "sql12.freesqldatabase.com";
  $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
  
 
- $firstname = $_POST['fname'];
- $lastname = $_POST['sname'];
+ $firstname = $_POST['FirstName'];
+ $lastname = $_POST['LastName'];
  $phone = $_POST['PhoneNumber'];
 $username = $_POST['email'];
  $password = $_POST['password'];
  $usertype = 'Doctor';
- $DoctorId = $_POST['DoctorId']; 
+ $DoctorId = $_POST['doctorId']; 
 
   $sql = "INSERT INTO `users`(`firstname`, `lastname`, 'phonenumber', `username`, `password`, `usertype`, `doctorid`) VALUES ('$firstname', '$lastname', '$phone', '$username','$password', '$usertype', '$DoctorId')";
 
