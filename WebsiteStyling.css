@@ -183,6 +183,17 @@
 	display: block;
 	line-height: 2;
 }
+.enquiryForm input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background: #f1f1f1;
+
+}
 .enquiryForm textarea  {
 	width: 100%;
 	padding: 12px;
@@ -194,29 +205,18 @@
 	background: #f1f1f1;
 
 }
-.enquiryForm input[type=tel]  {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	background: #f1f1f1;
-
-}
-.enquiryForm input[type=text]  {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-	background: #f1f1f1;
-
-}
 .enquiryForm input[type=email] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background: #f1f1f1;
+
+}
+.enquiryForm input[type=tel]  {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -317,7 +317,7 @@ hr {
 .login #password {
 	float: left;
 }
-.login input[type=password] {
+.login input[type=email] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -326,7 +326,7 @@ hr {
 	box-sizing: border-box;
 	background: #f1f1f1;
 }
-.login input[type=email] {
+.login input[type=password] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
