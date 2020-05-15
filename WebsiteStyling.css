@@ -1006,3 +1006,69 @@ span.returnToMedicalSubscription a{
 	text-decoration: none;
 	color: blue;
 }
+
+
+#patientConsultation {
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.patientConsultation {
+	padding: 16px;
+	margin: auto;
+}
+.patientConsultation #patientConsultationTitle {
+	font-size: 26px;
+}
+.patientConsultation #appointmentTimetableTitle {
+	font-size: 22px;
+}
+.patientConsultation #bookChangeTitle {
+	font-size: 22px;
+}
+.patientConsultation input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.patientConsultation p {
+	font-size: 16px;
+}
+.patientConsultation .btnGroup{
+	width: 100%;
+}
+.patientConsultation button {
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+	float: left;
+	display: inline;
+}
+.patientConsultation button:hover {
+	opacity: 0.8;
+}
+.btnGroup #bookbtn{
+	background-color: #4CAF50;
+	width: 50%;
+}
+.btnGroup #deletebtn {
+	background-color: #f44336;
+	width: 50%;
+}
+.btnGroup:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+ input[type="value"] {  
+    text-align: center; 
+	width: 100%;
+	font-size: 14px;
+} 
