@@ -1,0 +1,124 @@
+<!-- CREATE MEDICAL SUBSCRIPTION -->
+
+<!DOCTYPE html>
+<html> 
+	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
+	<head>
+		<title>Referral</title> <!-- This is the title of the site that shows up in the tab feel free to change it -->
+		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
+		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
+	</head>	
+	<body>
+		<!-- fixed top navigation bar -->
+		<header>
+			<div class="navigation" id="nav"> 
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<div class="navbar-right">
+					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+					<a href="#consultations" onclick="window.location.href='DOC-BookingSystemPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
+					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
+					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
+				</div>
+				
+				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</header>
+		
+		<!-- content body of website -->
+		<div class="body">
+			<section class="contentContainer">
+				<form class="referralForm" action="ReferralHandler.php" method="post"> <!-- need to write php script to deal with the form once it is submitted, maybe email to a mail box? and need to add in js form validation -->
+					<div class="referralForm" id="referralForm">
+						<label for="referralFormTitle" id="referralFormTitle"><b>Referral Form</b></label>
+						<p>This form is for referrals, if a doctor wishes to refer a patient to another doctor.</p>
+						<p>This form has 3 main components
+							<ul>
+								<li><a href="#viewPatientDetails">Patient Details</a></li>
+								<li><a href="#viewConsultationDetails">Consultation Details</a></li>
+								<li id="viewPatientDetails"><a href="#viewDoctorDetails">Doctor Details</a></li> <!-- This has the id view patient details to enable the page contents link to display the patients details section correctly -->
+							</ul>
+						</p>
+						<br>
+						
+						<!-- Patient details -->
+						<label for="patientDetailsTitle" id="patientDetailsTitle"><b>Patient Details</b></label>
+						
+						<hr>
+
+						<label for="P-firstName"><b>First Name</b></label>
+							<input type="text" id="firstName" name="P-FirstName" placeholder="Enter your first name" required>
+							
+						<label for="P-lastName"><b>Last Name</b></label>
+							<input type="text" id="lastName" name="P-LastName" placeholder="Enter your last name" required>
+							
+						<label for="P-email"><b>Email</b></label>
+							<input type="email" id="email" name="P-Email" placeholder="Enter your email" required>
+
+						<label for="apptID"><b>Appointment ID</b></label>
+							<input type="text" id="appointmentId" name="ApptID" placeholder="If relevant, enter your appointment ID" required >
+						
+						<br id="viewConsultationDetails"> <!-- This has the id view consultation details to enable the page contents link to display the consultation details section correctly -->
+						
+						<br>
+						
+						<!-- consultation category -->
+						<label for="consultationDetailsTitle" id="consultationDetailsTitle"><b>Consultation Details</b></label>
+						<p>This section is for you to describe the patient's current condition and reason for referral.</p>
+						
+						<hr>
+						
+						<br>
+						
+						<label for="consultationSummary"><b>Consultation Summary</b></label>
+							<textarea id="consultationSummary" name="consultationSummary" placeholder="Write your message here" style="height:150px" required></textarea>
+						
+						
+						<br id="viewDoctorDetails"> <!-- This has the id view doctor details to enable the page contents link to display the doctor details section correctly -->
+						
+						<!-- Doctor details section-->
+						<label for="doctorDetailsTitle" id="doctorDetailsTitle"><b>Doctor Details</b></label>
+						<p>This section is for the details of the doctor making the referral</p>
+						
+						<hr>
+						
+						<label for="D-firstName"><b>First Name</b></label>
+							<input type="text" id="firstName" name="D-FirstName" placeholder="Enter your first name" required>
+							
+						<label for="D-lastName"><b>Last Name</b></label>
+							<input type="text" id="lastName" name="D-LastName" placeholder="Enter your last name" required>
+							
+						<label for="D-email"><b>Email</b></label>
+							<input type="email" id="email" name="D-Email" placeholder="Enter your email" required>
+							
+						<label for="D-phone"><b>Phone Number</b></label>
+							<input type="tel" id="phoneNumber" name="D-PhoneNumber" placeholder="Enter your phone number">
+						
+						<button id="submitbtn" type="submit">Submit</button>
+					</div>
+					
+					<!-- bottom of enquiry form for cancel/clear form and link to FAQ -->
+					<div class="referralForm" style="background-color:#f1f1f1">
+						<button type="reset" class="resetbtn">Cancel</button> <!-- cancel button behaves as a reset button and clears the form -->
+						<span class="medicalSubscription">Want to create a medical subscription? Fill out the form <a href="DOC-CreateMedicalSubscriptionPage.htm">here</a>.</span> 
+					</div>
+				</form>
+			</section>
+		</div>
+		
+		<!-- fixed footer bar -->
+		<div class="footer">
+			<div class="etcDetails">
+				<a href="MAIN-FAQPage.htm">FAQ</a>
+				<a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
+				<a href="MAIN-PrivacyPage.htm">Privacy</a>
+				<a href="MAIN-SecurityPage.htm">Security</a>
+			</div>
+			
+			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
+		</div>
+	</body>
+</html>
