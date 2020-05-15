@@ -17,4 +17,4 @@ if ($conn->query($sql) === TRUE) {
    include("MAIN-ForgotPasswordPage-[Failed].htm");
 
 $conn->close();
-//usertype
+?>
