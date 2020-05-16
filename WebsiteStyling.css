@@ -468,11 +468,11 @@ span.returnToLogin a{
 	width: 100%;
 }
 .register input[type=button]{
-	background-color: lightblue;
+	background-color: #C0C0C0;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
-	border: 1px solid lightblue;
+	border: 1px solid #C0C0C0;
 	cursor: pointer;
 	font-size: 16px;
 	float: left;
@@ -1047,7 +1047,7 @@ span.returnToMedicalSubscription a{
 	opacity: 0.8;
 }
 .doctorConsultation #clearbtn {
-	background-color: lightblue;
+	background-color: grey;
 }
 .doctorConsultation input[type="value"] {
 	text-align: center;
@@ -1115,7 +1115,7 @@ span.returnToMedicalSubscription a{
 }
 .patientConsultation #clearbtn {
 	width: 100%;
-	background-color: lightblue;
+	background-color: grey;
 }
 .patientConsultation input[type="value"] {
 	text-align: center;
@@ -1163,11 +1163,11 @@ span.returnToMedicalSubscription a{
 	width: 100%;
 }
 .referralMenuBtn input[type=button] {
-	background-color: lightblue;
+	background-color: #C0C0C0;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
-	border: 1px solid lightblue;
+	border: 1px solid #C0C0C0;
 	cursor: pointer; 
 	font-size: 16px;
 	float: left;
@@ -1325,3 +1325,30 @@ span.returnToReferral a{
 	color: blue;
 }
 
+/
+#dashboard {
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.dashboard {
+	padding: 16px;
+	margin: auto;
+}
+.dashboard #dashboardTitle {
+	font-size: 22px;
+}
+.dashboard input[type=button] {
+	background-color: #C0C0C0;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: 1px solid #C0C0C0;
+	cursor: pointer; 
+	font-size: 16px;
+	width: 100%;
+}
+.dashboard input[type=button]:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
