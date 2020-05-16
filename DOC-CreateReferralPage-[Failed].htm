@@ -1,0 +1,59 @@
+<!-- CREATE MEDICAL SUBSCRIPTION -->
+
+<!DOCTYPE html>
+<html> 
+	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
+	<head>
+		<title>Medical Subscription</title> <!-- This is the title of the site that shows up in the tab feel free to change it -->
+		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
+		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
+	</head>	
+	<body>
+		<!-- fixed top navigation bar -->
+		<header>
+			<div class="navigation" id="nav"> 
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<div class="navbar-right">
+					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+					<a href="#consultations" onclick="window.location.href='DOC-BookingSystemPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
+					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
+					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
+				</div>
+				
+				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
+				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</header>
+		
+		<!-- content body of website -->
+		<div class="body">
+		<br>
+		
+		<span class="returnToReferral"><a href="DOC-CreateReferralPage.htm"><p>&#8592; </p>Return to referral form</a></span>
+		
+		<br>
+		
+			<section class="contentContainer">
+				<div class="referralFormLink">
+					<h2>Oops! :/</h2>
+					<p>Something went wrong submitting your enquiry form. Please return to the <a href="DOC-CreateMedicalSubscription">medical subscription form</a> and complete the form again. We apologise for any inconviences.</p>
+				</div>
+			</section>
+		</div>
+		
+		<!-- fixed footer bar -->
+		<div class="footer">
+			<div class="etcDetails">
+				<a href="MAIN-FAQPage.htm">FAQ</a>
+				<a href="MAIN-Terms&ConditionsPage.htm">Terms &amp; Conditions</a>
+				<a href="MAIN-PrivacyPage.htm">Privacy</a>
+				<a href="MAIN-SecurityPage.htm">Security</a>
+			</div>
+			
+			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
+		</div>
+	</body>
+</html>
