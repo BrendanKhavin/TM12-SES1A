@@ -275,6 +275,22 @@
   }
 }
 
+/* return to enquiry */
+span.returnToEnquiry p{
+	font-size: 30px;
+	display: inline;
+}
+span.returnToEnquiry a{
+	text-decoration: none;
+	color: black;
+}
+
+/* link to contact page from failed enquiry form page */
+.enquiryFormLink a{
+	text-decoration: none;
+	color: blue;
+}
+
 /* horizontal line for breaking up sections */
 hr {
 	border: 0.5px solid lightgrey;
@@ -427,6 +443,13 @@ span.returnToLogin p{
 }
 span.returnToLogin a{
 	text-decoration: none;
+	color: black;
+}
+
+/* link to forgot password page from failed forgot password page */
+.forgotPasswordLink a{
+	text-decoration: none;
+	color: blue;
 }
 
 /*register form */
@@ -571,11 +594,15 @@ span.returnToLogin a{
 	font-size: 15px;
 	padding-top: 16px;
 }
-p .login{
+p .loginLink{
 	font-size: 14px;
 }
+.loginLink a{
+	text-decoration: none;
+	color: blue;
+}
 .patientRegister a{
-	/* text-decoration: none; */
+	text-decoration: none;
 	color: blue;
 }
 /* responsive registration form || resize items if window is small*/
@@ -590,7 +617,7 @@ p .login{
   }
 }
 
-/* patient register form */
+/* doctor register form */
 #doctorRegister{
 	margin: auto;
 	border: 3px solid #f1f1f1;
@@ -674,7 +701,7 @@ p .login{
 	font-size: 14px;
 }
 .doctorRegister a{
-	/* text-decoration: none; */
+	text-decoration: none;
 	color: blue;
 }
 /* responsive registration form || resize items if window is small*/
@@ -687,6 +714,22 @@ p .login{
   .doctorRegister .cancelbtn {
     width: 100%;
   }
+}
+
+/* return to sign up */
+span.returnToSignup p{
+	font-size: 30px;
+	display: inline;
+}
+span.returnToSignup a{
+	text-decoration: none;
+	color: black;
+}
+
+/* link to sign up page from failed sign up form page */
+.signupFormLink a{
+	text-decoration: none;
+	color: blue;
 }
 
 /* doctor account settings */
@@ -823,3 +866,402 @@ p .login{
 	margin: 8px 0;
 	background-color: #f44336;
 }
+
+/* medical subscription form */
+#medicalSubscriptionForm{
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.medicalSubscriptionForm {
+	padding: 16px;
+	margin: auto;
+}
+.medicalSubscriptionForm #medicalSubscriptionFormTitle {
+	font-size: 22px;
+}
+.medicalSubscriptionForm #patientDetailsTitle {
+	font-size: 20px;
+}
+.medicalSubscriptionForm #consultationDetailsTitle {
+	font-size: 20px;
+}
+.medicalSubscriptionForm #doctorDetailsTitle {
+	font-size: 20px;
+}
+.medicalSubscriptionForm li a {
+	color: black;
+	text-decoration: none;
+}
+.medicalSubscriptionForm .radio-inline{
+	display: block;
+	line-height: 2;
+}
+.medicalSubscriptionForm input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.medicalSubscriptionForm input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.medicalSubscriptionForm input[type=tel] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.medicalSubscriptionForm input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.medicalSubscriptionForm textarea  {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background: #f1f1f1;
+
+}
+.medicalSubscriptionForm button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.medicalSubscriptionForm button:hover {
+	opacity: 0.8;
+}
+.prescriptionUpload > input{
+	display: none;
+	
+}
+.prescriptionUpload img{
+	float: right;
+	width: 25px;
+	cursor: pointer;
+}
+.medicalSubscriptionForm .resetbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.medicalSubscriptionForm span.referral{
+    float: right;
+	font-size: 15px;
+	padding-top: 16px;
+}
+.medicalSubscriptionForm a{
+	text-decoration: none;
+	color: blue;
+}
+/* responsive medical subscription form || resize items if window is small*/
+@media screen and (max-width: 700px) {
+  .medicalSubscriptionForm span.referral {
+    display: block;
+    float: none;
+	text-align: center;
+  }
+  .medicalSubscriptionForm .resetbtn {
+    width: 100%;
+  }
+}
+
+/* return to medical subscription form*/
+span.returnToMedicalSubscription p{
+	font-size: 30px;
+	display: inline;
+}
+span.returnToMedicalSubscription a{
+	text-decoration: none;
+	color: black;
+}
+
+/* link to create medical subscription page from failed medical subscription form page */
+.medicalSubscriptionFormLink a{
+	text-decoration: none;
+	color: blue;
+}
+
+/* doctor consultation page */
+#doctorConsultation {
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.doctorConsultation {
+	padding: 16px;
+	margin: auto;
+}
+.doctorConsultation #doctorConsultationTitle {
+	font-size: 22px;
+}
+.doctorConsultation #appointmentListTitle {
+	font-size: 19px;
+}
+.doctorConsultation #BookorChangeConsultationTitle {
+	font-size: 19px;
+}
+.doctorConsultation input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.doctorConsultation button {
+	background-color: #f44336;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.doctorConsultation button:hover {
+	opacity: 0.8;
+}
+.doctorConsultation #clearbtn {
+	background-color: lightblue;
+}
+.doctorConsultation input[type="value"] {
+	text-align: center;
+	width: 100%;
+	font-size:14px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+#patientConsultation {
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.patientConsultation {
+	padding: 16px;
+	margin: auto;
+}
+.patientConsultation #patientConsultationTitle {
+	font-size: 22px;
+}
+.patientConsultation #appointmentListTitle {
+	font-size: 19px;
+}
+.patientConsultation #BookorChangeConsultationTitle {
+	font-size: 19px;
+}
+.patientConsultation input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background:#f1f1f1;
+}
+.patientConsultation button {
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+	float: left;
+}
+.patientConsultation button:hover {
+	opacity: 0.8;
+}
+.btnGroup #bookbtn {
+	background-color: #4CAF50;
+	width: 50%;
+}
+.btnGroup #deletebtn {
+	background-color: #f44336;
+	width: 50%;
+}
+.patientconsultation:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.patientConsultation #clearbtn {
+	width: 100%;
+	background-color: lightblue;
+}
+.patientConsultation input[type="value"] {
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+/* responsive patient consultation management page || resize items if window is small*/
+@media screen and (max-width: 700px) {
+  .patientConsultation .btnGroup button {
+	  width: 100%;
+	  display: block;
+	  float: none;
+	  margin: 4px 0;
+  }
+  .patientConsultation button {
+	  width: 100%;
+  }
+  .btnGroup #bookbtn {
+	  width: 100%;
+  }
+  .btnGroup #deletebtn {
+	  width: 100%;
+  }
+}
+
+/* referral form */
+#referralForm {
+	margin: auto;
+	border: 3px solid #f1f1f1;
+}
+.referralForm {
+	padding: 16px;
+	margin: auto;
+}
+.referralForm #referralFormTitle {
+	font-size: 22px;
+}
+.referralForm #patientDetailsTitle {
+	font-size: 19px;
+}
+.referralForm #consultationDetailsTitle {
+	font-size: 19px;
+}
+.referralForm #doctorDetailsTitle {
+	font-size: 19px;
+}
+.referralForm li a {
+	color: black;
+	text-decoration: none;
+}
+.referralForm input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.referralForm input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.referralForm input[type=tel] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #f1f1f1;
+}
+.referralForm textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background: #f1f1f1;
+	height: 150px;
+}
+.referralForm button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+}
+.referralForm button:hover {
+	opacity: 0.8;
+}
+.referralForm .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.referralForm span.medicalSubscription {
+	float: right;
+	font-size: 15px;
+	padding-top: 16px;
+}
+.referralForm a {
+	text-decoration: none;
+	color: blue;
+}
+/* responsive referral form || resize items if window is small*/
+@media screen and (max-width: 700px) {
+  .referralForm span.medicalSubscription {
+	  display: block;
+	  float: none;
+	  text-align: center;
+  }
+  .referralForm .cancelbtn {
+	  width: 100%;
+  }
+}
+
+/* return to referral form*/
+span.returnToReferral p{
+	font-size: 30px;
+	display: inline;
+}
+span.returnToReferral a{
+	text-decoration: none;
+	color: black;
+}
+/* link to create medical subscription page from failed medical subscription form page */
+.referralFormLink a{
+	text-decoration: none;
+	color: blue;
+}
+

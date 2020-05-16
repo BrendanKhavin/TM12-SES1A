@@ -16,7 +16,7 @@
 				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
 					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-					<a href="#calendar" onclick="window.location.href='DOC-CalendarPage.htm'"><i class="fas fa-calendar-alt"></i><b> Calendar</b></a>
+					<a href="#consultations" onclick="window.location.href='DOC-BookingSystemPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
 					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
 					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
 				</div>
@@ -30,85 +30,17 @@
 		
 		<!-- content body of website -->
 		<div class="body">
+		<br>
+		
+		<span class="returnToMedicalSubscription"><a href="DOC-CreateMedicalSubscription.htm"><p>&#8592; </p>Return to medical subscription form</a></span>
+		
+		<br>
+		
 			<section class="contentContainer">
-				<form class="enquiryForm" onsubmit="" action="MedicalSubscriptionHandler.php" method="post"> <!-- need to write php script to deal with the form once it is submitted, maybe email to a mail box? and need to add in js form validation -->
-						<div class="enquiryForm" id="enquiryForm">
-							<label for="enquiryFormTitle" id="enquiryFormTitle"><b>Medical Subscription Form</b></label>
-							<p>This form is for medical subscriptions, it should be completed post consultation and made available to the patients.</p>
-							
-							<hr>
-							
-							<br>
-							
-							<!-- Patient details -->
-							<label for="patientDetailsTitle" id="patientDetailsTitle"><b>Patient Details</b></label>
-							<label for="P-firstName"><b>First Name</b></label>
-								<input type="text" id="firstName" name="P-FirstName" placeholder="Enter your first name" required>
-								
-							<label for="P-lastName"><b>Last Name</b></label>
-								<input type="text" id="lastName" name="P-LastName" placeholder="Enter your last name" required>
-								
-							<label for="P-email"><b>Email</b></label>
-								<input type="email" id="email" name="P-Email" placeholder="Enter your email" required>
-
-							<label for="apptID"><b>Appointment ID</b></label>
-								<input type="text" id="appointmentId" name="ApptID" placeholder="If relevant, enter your appointment ID" required >
-							
-							<!-- consultation category -->
-							<label for="consultationDetailsTitle" id="enquiryFormTitle"><b>Medical Subscription Form</b></label>
-							<div>
-								<label for="consultatinType"><b>What is the nature of the consultation?</b></label> 
-								<label class="radio-inline">
-									<input type="radio" name="radioOption">General Enquiry
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="radioOption">Follow-up Enquiry
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="radioOption">Emergency Enquiry
-								</label>
-								<label class="radio-inline">
-									<input type="radio" name="radioOption">Feedback
-								</label>
-							</div><br>
-							
-							<label for="consultationSummary"><b>Consultation Summary</b></label>
-								<textarea id="consultationSummary" name="consultationSummary" placeholder="Write your message here" style="height:200px" required></textarea>
-							
-							<label for="recommendation"><b>Recommended Treatment/Remedy</b></label>
-								<textarea id="recommendation" name="recommendation" placeholder="Write your message here" style="height:200px" required></textarea>
-							
-							<label for="referral"><b>Referral Notice</b></label>
-								<textarea id="referral" name="referralNotice" placeholder="Write your message here" style="height:200px" required></textarea>
-							
-							<div class="prescriptionUpload">
-								<label for="prescriptionUpload"><b>Medical Prescription</b><img src="uploadIcon.png"/></label>
-								<input id="prescriptionUpload" type="file" name="prescription">
-							</div>
-							
-							<!-- Doctor details section-->
-							
-							<label for="D-firstName"><b>First Name</b></label>
-								<input type="text" id="firstName" name="D-FirstName" placeholder="Enter your first name" required>
-								
-							<label for="D-lastName"><b>Last Name</b></label>
-								<input type="text" id="lastName" name="D-LastName" placeholder="Enter your last name" required>
-								
-							<label for="D-email"><b>Email</b></label>
-								<input type="email" id="email" name="D-Email" placeholder="Enter your email" required>
-								
-							<label for="D-phone"><b>Phone Number</b></label>
-								<input type="tel" id="phoneNumber" name="D-PhoneNumber" placeholder="Enter your phone number">
-							
-							<button id="submitbtn" type="submit">Submit</button>
-						</div>
-						
-						<!-- bottom of enquiry form for cancel/clear form and link to FAQ -->
-						<div class="enquiryForm" id="enquiryFooter">
-							<button type="reset" class="canceltbtn">Cancel</button> <!-- cancel button behaves as a reset button and clears the form -->
-							<span class="FAQMenu">Want to make a referral? Fill out the form <a href="DOC-ReferralPage.htm">here</a>.</span> 
-						</div>
-					</form>
+				<div class="medicalSubscriptionFormLink">
+					<h2>Oops! :/</h2>
+					<p>Something went wrong submitting your enquiry form. Please return to the <a href="DOC-CreateMedicalSubscription">medical subscription form</a> and complete the form again. We apologise for any inconviences.</p>
+				</div>
 			</section>
 		</div>
 		
