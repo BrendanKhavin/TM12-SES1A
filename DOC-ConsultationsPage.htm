@@ -1,4 +1,5 @@
-<!-- PATIENT BOOKING/CONSULTATION MANAGEMENT PAGE -->
+<!-- DOCTOR MANAGE CONSULTATIONS PAGE -->
+
 <?php
 	$dbhost = "sql12.freesqldatabase.com";
 	 $dbuser = "sql12337112";
@@ -77,7 +78,7 @@
 <html> 
 	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
 	<head>
-		<title>Online Medical Centre</title> <!-- This is the title of the site that shows up in the tab feel free to change it -->
+		<title>Consultations</title> <!-- This is the title of the site that shows up in the tab feel free to change it -->
 		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
 		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
@@ -86,11 +87,11 @@
 		<!-- fixed top navigation bar -->
 		<header>
 			<div class="navigation" id="nav"> 
-				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='PAT-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
-					<a href="#home" onclick="window.location.href='PAT-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-					<a href="#consultations" onclick="window.location.href='PAT-BookingSystemPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
-					<a href="#accountSettings" onclick="window.location.href='PAT-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
+					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+					<a href="#consultations" onclick="window.location.href='DOC-BookingSystemPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
+					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
 					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
 				</div>
 				
@@ -101,43 +102,47 @@
 			</div>
 		</header>
 		
-		<!-- <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> --> 
 		<!-- content body of website -->
-		
 		<div class="body">
 			<section class="contentContainer">
-				<form class="patientConsultation" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-					<div class="patientConsultation" id="patientConsultation"> 
-						<label for="patientConsultationTitle" id="patientConsultationTitle"><b>Manage Consultations</b><label>
+				<form class="doctorConsultation" action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+					<div class="doctorConsultation" id="doctorConsultation">
+						<label for="doctorConsultationTitle" id="doctorConsultationTitle"><b>Manage Consultations</b></label>
 						
 						<hr>
-					
-						<label for="appointmentTimetableTitle" id="appointmentTimetableTitle"><b>Appointment Timetable</b></label>
+						
+						<label for="appointmentListTitle" id="appointmentListTitle"><b>Appointment Timetable</b></label>
 						
 						<br>
 						
 						<input size="50" type="value" placeholder="No current bookings" name="booking" value="<?php echo $value ?>">
-
-						<br> 
+						
 						<br>
 						
-						<label for="book&Change" id="bookChangeTitle"><b>Book or Change Consultations</b></label>
-						<p>Fill in the following fields to <b>book</b> or <b>change</b> consultations.</p>
-						<label for="time">Time</label>
-							<input type="text" placeholder="Time eg. '2:00'" maxlength="4"name="time" value="">
+						<label for="BookorChangeConsultationTitle" id="BookorChangeConsultationTitle"><b>Change Consultations</b></label>
+						<p>Fill in the following fields to make <b>ammendments</b> to consultations.</p>
 						
-						<input type="text" placeholder="Day eg. '1-31'" maxlength="2"name="day" value="">
-						<input type="text" placeholder="Month eg. '1-12'" maxlength="2"name="month" value="">
-						<input type="text" placeholder="Doctor Name (lastname)" style="margin-right:5px" name="doctorname" value="">
+						<label for="time"><b>Time (24-Hour Time)</b></label>
+							<input type="text" placeholder="e.g. 09:00" maxlength="4" name="time" value="">
+							
+						<label for="day"><b>Day</b></label>
+							<input type="text" placeholder="e.g. 1-31" maxlength="2" name="day" value="">
+						
+						<label for="month"><b>Month</b></label>
+							<input type="text" placeholder="e.g. 1-12" maxlength="2" name="month" value="">
+							
+						<label for="docName"><b>Doctor Name (lastname)</b></label>
+							<input type="text" placeholder="e.g. smith" name="doctorname" value="">
+						
 						<br>
-						<div class="btnGroup">
-							<button type="submit" name="submit" id="bookbtn">Book</button>
-							<button type="delete" name="delete" id="deletebtn">Delete</button> 
-						</div>
+						
+						<button type="submit" name="delete" id="deletebtn">Delete</button>
+						
+						<button type="reset" name="clear" id="clearbtn">Clear</button>
 					</div>
-					<div class="patientConsultation" style="background-color:#f1f1f1">
-						<p style="color:red"; name="error"><?php echo $message ?></p> 
-					</div
+					<div class="doctorConsultation" style="background-color:#f1f1f1">
+						<p style="color:red" name="error"><?php echo $message ?></p>
+					</div>
 				</form>
 			</section>
 		</div>
