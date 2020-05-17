@@ -23,7 +23,7 @@ $dbhost = "sql12.freesqldatabase.com";
  
  //need to confirm table name
 
-  $sql = "INSERT INTO `medicalsubscriptions`(`pat_firstname`, `pat_lastname`, 'PAT_email', 'apptId', `consultationType`, `consultationSummary`, `recommendation`, `referralNotice`, 'prescription', 'doc_firstname', 'doc_lastname', 'doc_email', 'doc_phonenumber') VALUES ('$Pat_firstname', '$Pat_lastname', '$Pat_email', '$apptId', '$consultationType', '$consultationSummary', '$recommendation', '$referralNotice', '$prescription', '$Doc_firstname', '$Doc_lastname', '$Doc_email, '$Doc_phone')";
+  $sql = "INSERT INTO `medicalsubscriptions`(`pat_firstname`, `pat_lastname`, 'pat_email', 'apptId', `consultationType`, `consultationSummary`, `recommendation`, `referralNotice`, 'prescription', 'doc_firstname', 'doc_lastname', 'doc_email', 'doc_phonenumber') VALUES ('$Pat_firstname', '$Pat_lastname', '$Pat_email', '$apptId', '$consultationType', '$consultationSummary', '$recommendation', '$referralNotice', '$prescription', '$Doc_firstname', '$Doc_lastname', '$Doc_email, '$Doc_phone')";
 
 if ($conn->query($sql) === TRUE) {
     include("DOC-CreateMedicalSubscriptionPage-[Success].htm");
