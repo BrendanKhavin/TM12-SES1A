@@ -16,7 +16,7 @@
 				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
 					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-					<a href="#consultations" onclick="window.location.href='DOC-BookingSystemPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
+					<a href="#consultations" onclick="window.location.href='DOC-ConsultationsPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
 					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
 					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
 				</div>
@@ -31,19 +31,25 @@
 		<!-- content body of website -->
 		<div class="body">
 			<section class="contentContainer">
-				<h2>Doctor home</h2> 
-				<p>This page is the calendar page for doctors.</p> 
+				<div class="dashboard">
+					<label for="dashboardTitle" id="dashboardTitle"><b>Welcome to the Online Medical Centre</b></label>
+					<p>This is your home dashboard, from here you will be able to manage consultations, create medical subscriptions, view or create referrals, and view and deal with emergencies.</p> 
 				
-				<hr>
+					<hr>
+					
+					<br>
 				
-				<input type="button" value="Manage Consultations" onclick="window.location.href='DOC-BookingSystemPage.htm'"/>
+					<input type="button" value="Manage Consultations" onclick="window.location.href='DOC-ConsultationsPage.htm'"/>
 				
-				<input type="button" value="Medical Subscriptions" onclick="window.location.href='DOC-CreateMedicalSubscription.htm'"/>
+					<input type="button" value="Medical Subscriptions" onclick="window.location.href='DOC-CreateMedicalSubscription.htm'"/>
 				
-				<input type="button" value="Referral" onclick="window.location.href='DOC-MakeReferralPage.htm'"/>
+					<input type="button" value="Referrals" onclick="window.location.href='DOC-ReferralsMenuPage.htm'"/>
 				
-				<input type="button" value="Emergencies" onclick="window.location.href=''"/>
-	
+					<input type="button" value="Urgent Cases" onclick="window.location.href='DOC-UrgentCasesPage.htm'"/>
+					
+					<center><p style="color:red"><b><em>For emergencies patients should be redirected 000.</em></b></p></center>
+				
+				</div>
 			</section>
 		</div>
 		

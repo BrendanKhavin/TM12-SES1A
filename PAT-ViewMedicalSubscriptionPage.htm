@@ -1,10 +1,23 @@
-<!-- PATIENT HOME PAGE -->
+<!-- PATIENT VIEW MEDICAL SUBSCRIPTIONS -->
+
+<?php
+	$dbhost = "sql12.freesqldatabase.com";
+	$dbuser = "sql12337112";
+	$dbpass = "yacY8zPDxP";
+	$db = "sql12337112";
+	$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+	$patientfirstname = "karen"; 
+	$patientlastname = "smith";
+	
+	$sqlValue = "SELECT * FROM `medicalsubscription` WHERE `pat_firstname`='$patientfirstname' AND 'pat_lastname'='$patientlastname'";
+	$resultValue = mysqli_query($conn,$sqlValue);
+?>
 
 <!DOCTYPE html>
 <html> 
 	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
 	<head>
-		<title>Patient</title> <!-- page title in tab -->
+		<title>Online Medical Centre</title> <!-- This is the title of the site that shows up in the tab feel free to change it -->
 		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
 		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
@@ -13,7 +26,7 @@
 		<!-- fixed top navigation bar -->
 		<header>
 			<div class="navigation" id="nav"> 
-				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='PAT-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
 					<a href="#home" onclick="window.location.href='PAT-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
 					<a href="#consultations" onclick="window.location.href='PAT-ConsultationPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
@@ -31,24 +44,31 @@
 		<!-- content body of website -->
 		<div class="body">
 			<section class="contentContainer">
-				<div class="dashboard">
-					<label for="dashboardTitle" id="dashboardTitle"><b>Welcome to the Online Medical Centre</b></label>
-					<p>This is your home dashboard, from here you will be able to manage consultations, view medical subscriptions, find a doctor, chat with a doctor and submit emergency forms.</p> 
+				<div class="viewMedicalSubscriptions" id="viewMedicalSubscriptions">
 				
-					<hr>
-					
 					<br>
-					
-					<input type="button" value="Manage Consultations" onclick="window.location.href='PAT-ConsultationsPage.htm'"/>
 				
-					<input type="button" value="Medical Subscriptions" onclick="window.location.href='PAT-ViewMedicalSubscriptionPage.htm'"/>
-				
-					<input type="button" value="Find a Doctor" onclick="window.location.href='PAT-FindADoctorPage.htm'"/>
-				
-					<input type="button" value="Urgent Cases" onclick="window.location.href='PAT-UrgentCasesPage.htm'"/>
-					
-					<center><p style="color:red"><b><em>For emergencies we recommend that you call 000.</em></b></p></center>
-				
+					<table>
+						<tr>
+							<th>Appointment ID</th>
+							<th>Doctor</th>
+							<th>Email</th>
+							<th>Consultation Summary</th>
+							<th>Recommendation</th>
+						</tr>
+						
+						<?php if(mysqli_num_rows($resultValue) >= 1): ?>
+						<?php while($row = $resultValue->fetch_assoc()): ?>
+						<tr>
+							<td><?php echo $row['apptId']; ?></td>
+							<td>Dr.<?php echo $row['doc_firstname'] + $row['doc_lastname']; ?></td>
+							<td><?php echo $row['doc_email']; ?></td>
+							<td><?php echo $row['consultationSummary']; ?></td>
+							<td><?php echo $row['recommendation']; ?></td>
+						</tr>
+						<?php endwhile; ?>
+						<?php endif; ?>
+					</table>
 				</div>
 			</section>
 		</div>
@@ -65,4 +85,4 @@
 			<p id="copyRight">&copy; 2020 Online Medical Centre - All Rights Reserved.</p>
 		</div>
 	</body>
-</html>
+</html>					
