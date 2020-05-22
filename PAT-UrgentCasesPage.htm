@@ -32,9 +32,43 @@
 		<!-- content body of website -->
 		<div class="body">
 			<section class="contentContainer">
-			
-				<!-- ADD YOUR CONTENT HERE -->
-			
+				<form class="urgentCases" action="UrgentCasesHandler.php">
+					<div class="urgentCases" id="urgentCases">
+						<label for="urgentCasesTitle" id="urgentCasesTitle"><b>Urgent Cases</b></label>
+						<p>Please fill out the following form and the first available doctor will attend to you. Alternatively you may select the emergency option in the chat.</p>
+						
+						<hr>
+						
+						<br>
+						
+						<label for="firstName"><b>Firstname</b></label>
+							<input type="text" id="firstName" name="FirstName" placeholder="Enter your first name" required>
+							
+						<label for="lastName"><b>Last Name</b></label>
+							<input type="text" id="lastName" name="LastName" placeholder="Enter your last name" required>
+						
+						<label for="phone"><b>Phone Number</b></label>
+							<input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Enter your phone number">
+							
+						<label for="urgentCase"><b>Type of emergency</b><label>
+						<div class="custom-select" style="width:200px;">
+							<select id="emergencyType" name="emergencyType">
+								<option value="Pre-Surgery">Pre-Surgery</option>
+								<option value="Deterioration-in-Condition">Deterioration-in-Condition</option>
+								<option value="Prescribed-Medication-Repeat">Prescribed-Medication-Repeat</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+						
+						<div class="btnGroup">
+							<button id="submitbtn" type="submit">Submit</button>
+							<button id="clearbtn" type="reset">Clear</button>
+						</div>
+					</div>
+					<div class="urgentCases" style="background-color: #f1f1f1">
+						<center><p style="color:red"><b><em>For emergencies we recommend that you call 000.</em></b></p></center>
+					</div>
+				</form>
 			</section>
 		</div>
 		
