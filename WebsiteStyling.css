@@ -1062,6 +1062,7 @@ span.returnToMedicalSubscription a{
 	resize: vertical;
 }
 
+/*patient consultation */
 #patientConsultation {
 	margin: auto;
 	border: 3px solid #f1f1f1;
@@ -1445,6 +1446,7 @@ span.returnToReferral a{
 	display: block;
 	line-height: 2;
 }
+/* resize buttons for smaller window */
 @media screen and (max-width: 700px) {
   .urgentCases .btnGroup button {
     width: 100%;
@@ -1499,4 +1501,24 @@ span.returnToUrgentCases a{
 }
 .viewUrgentCases tr:nth-child(even) {
 	background-color: #dddddd;
+}
+
+/* view referrals doctor */
+.viewReferral {
+	padding: 16px;
+	margin: auto;
+}
+.viewReferral #viewReferralTitle {
+	font-size: 22px;
+}
+.viewReferral input[type="value"] {
+	text-align: center;
+	width: 100%;
+	font-size:14px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
