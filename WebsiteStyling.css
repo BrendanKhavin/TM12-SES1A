@@ -1445,3 +1445,32 @@ span.returnToReferral a{
 	display: block;
 	line-height: 2;
 }
+@media screen and (max-width: 700px) {
+  .urgentCases .btnGroup button {
+    width: 100%;
+	display: block;
+	float: none;
+	margin: 4px 0;
+  }
+  .btnGroup #submitbtn{
+	width: 100%;
+  }
+  .btnGroup #clearbtn {
+	width: 100%;
+  }
+}
+
+/* return to referral form*/
+span.returnToUrgentCases p{
+	font-size: 30px;
+	display: inline;
+}
+span.returnToUrgentCases a{
+	text-decoration: none;
+	color: black;
+}
+/* link to create medical subscription page from failed medical subscription form page */
+.urgentCasesFormLink a{
+	text-decoration: none;
+	color: blue;
+}
