@@ -1474,3 +1474,29 @@ span.returnToUrgentCases a{
 	text-decoration: none;
 	color: blue;
 }
+
+/* view medical subscription - patient */
+#viewUrgentCases {
+	margin: auto;
+}
+.viewUrgentCases {
+	padding: 16px;
+	margin: auto;
+}
+.viewUrgentCases #viewUrgentCasesTitle {
+	font-size: 22px;
+}
+.viewUrgentCases table {
+	font-family: helvetica;
+	border-collapse: collapse;
+	width: 100%;
+}
+.viewUrgentCases td, th {
+	border: 1px solid #ccc;
+	text-align: left;
+	padding: 8px;
+	
+}
+.viewUrgentCases tr:nth-child(even) {
+	background-color: #dddddd;
+}
