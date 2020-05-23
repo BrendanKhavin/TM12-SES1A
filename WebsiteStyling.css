@@ -1062,6 +1062,7 @@ span.returnToMedicalSubscription a{
 	resize: vertical;
 }
 
+/*patient consultation */
 #patientConsultation {
 	margin: auto;
 	border: 3px solid #f1f1f1;
@@ -1441,60 +1442,83 @@ span.returnToReferral a{
 	clear: both;
 	display: table;
 }
-.custom-select {
-  position: relative;
+.urgentCases .radio-inline{
+	display: block;
+	line-height: 2;
+}
+/* resize buttons for smaller window */
+@media screen and (max-width: 700px) {
+  .urgentCases .btnGroup button {
+    width: 100%;
+	display: block;
+	float: none;
+	margin: 4px 0;
+  }
+  .btnGroup #submitbtn{
+	width: 100%;
+  }
+  .btnGroup #clearbtn {
+	width: 100%;
+  }
 }
 
-.custom-select select {
-  display: none; /*hide original SELECT element: */
+/* return to referral form*/
+span.returnToUrgentCases p{
+	font-size: 30px;
+	display: inline;
+}
+span.returnToUrgentCases a{
+	text-decoration: none;
+	color: black;
+}
+/* link to create medical subscription page from failed medical subscription form page */
+.urgentCasesFormLink a{
+	text-decoration: none;
+	color: blue;
 }
 
-.select-selected {
-  background-color: DodgerBlue;
+/* view medical subscription - patient */
+#viewUrgentCases {
+	margin: auto;
+}
+.viewUrgentCases {
+	padding: 16px;
+	margin: auto;
+}
+.viewUrgentCases #viewUrgentCasesTitle {
+	font-size: 22px;
+}
+.viewUrgentCases table {
+	font-family: helvetica;
+	border-collapse: collapse;
+	width: 100%;
+}
+.viewUrgentCases td, th {
+	border: 1px solid #ccc;
+	text-align: left;
+	padding: 8px;
+	
+}
+.viewUrgentCases tr:nth-child(even) {
+	background-color: #dddddd;
 }
 
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+/* view referrals doctor */
+.viewReferral {
+	padding: 16px;
+	margin: auto;
 }
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
+.viewReferral #viewReferralTitle {
+	font-size: 22px;
 }
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+.viewReferral input[type="value"] {
+	text-align: center;
+	width: 100%;
+	font-size:14px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
