@@ -39,8 +39,6 @@
 						
 						<hr>
 						
-						<br>
-						
 						<label for="firstName"><b>Firstname</b></label>
 							<input type="text" id="firstName" name="FirstName" placeholder="Enter your first name" required>
 							
@@ -49,15 +47,13 @@
 						
 						<label for="phone"><b>Phone Number</b></label>
 							<input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Enter your phone number">
-							
-						<label for="urgentCase"><b>Type of emergency</b><label>
-						<div class="custom-select" style="width:200px;">
-							<select id="emergencyType" name="emergencyType">
-								<option value="Pre-Surgery">Pre-Surgery</option>
-								<option value="Deterioration-in-Condition">Deterioration-in-Condition</option>
-								<option value="Prescribed-Medication-Repeat">Prescribed-Medication-Repeat</option>
-								<option value="Other">Other</option>
-							</select>
+						
+						<div>
+							<label for="urgentCase"><b>Type of emergency</b><label>
+							<label class="radio-inline"><input type="radio" name="radioOption" value="Pre-Surgery">Pre-Surgery</label>
+							<label class="radio-inline"><input type="radio" name="radioOption" value="Deterioration-in-Condition">Deterioration-in-Condition</label>
+							<label class="radio-inline"><input type="radio" name="radioOption" value="Prescribed-Medication-Repeat">Prescribed-Medication-Repeat</label>
+							<label class="radio-inline"><input type="radio" name="radioOption" value="Other">Other</label>
 						</div>
 						
 						<div class="btnGroup">
