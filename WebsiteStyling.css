@@ -1522,3 +1522,19 @@ span.returnToUrgentCases a{
 	margin-bottom: 16px;
 	resize: vertical;
 }
+
+/* find a doctor */
+#findDoc {
+	margin: auto;
+}
+.findDoc {
+	padding: 16px;
+	margin: auto;
+}
+.findDoc #doctorName {
+	font-size: 22px;
+}
+.findDoc a {
+	color: black;
+	text-decoration: none;
+}
