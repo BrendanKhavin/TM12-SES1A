@@ -90,9 +90,9 @@
 				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
 					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-					<a href="#consultations" onclick="window.location.href='DOC-ConsultationPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
-					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
-					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
+					<a href="#consultations" onclick="window.location.href='DOC-ConsultationPage.php'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
+					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.php'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
+					<a href="#logout" onclick="window.location.href='index.html'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
 				</div>
 				
 				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->

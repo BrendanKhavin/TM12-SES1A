@@ -1,4 +1,4 @@
-<!-- DOCTOR SETTINGS PAGE -->
+<!-- PATIENT SETTING PAGE -->
 
 <?php 
 	$dbhost = "sql12.freesqldatabase.com";
@@ -6,9 +6,9 @@
 	 $dbpass = "yacY8zPDxP";
 	 $db = "sql12337112";
 	 $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
-	 $username = "karen"; 
+	 $patientname = "karen"; 
 
-	 $sqlValue = "SELECT * FROM `users` WHERE `username`='$username'";
+	 $sqlValue = "SELECT * FROM `users` WHERE `patientname`='$patientname'";
 	 $resultValue = mysqli_query($conn,$sqlValue);
 	if (mysqli_num_rows($resultValue) >= 1) {
 		while($row = $resultValue->fetch_assoc()) {
@@ -17,29 +17,27 @@
 			$phonenumber = $row['phonenumber'];
 			$email = $row['username'];
 			$password = $row['password'];
-			$doctorid = $row['doctorid'];
 		
 	}
 	
 		$firstname = $_POST['FirstName'];
 		$lastname = $_POST['LastName'];
-		$phonenumber = $_POST['PhonenNumber'];
-		$email = $_POST['email'];
+		$phonenumber = $_POST['PhoneNumber'];
+		$email = $_POST['Email'];
 		$password = $_POST['password'];
-		$doctorid=$_POST['doctorId'];
 	
 	
 	//if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(isset($_POST['submit'])) {
-		if (empty($firstname) || empty($lastname) || empty($email) || empty($password)) || empty($doctorid) { 
+		if (empty($firstname) || empty($lastname) || empty($email) || empty($password)) { 
 		$message = "Please fill in all fields"; 
 		}
 	} else { 
-		$sql = "SELECT * FROM `users` WHERE `username`='$username'";
+		$sql = "SELECT * FROM `users` WHERE `usertype`='Doctor' and `lastname`='$doctorname'";
 		$result = mysqli_query($conn,$sql);
 		if (mysqli_num_rows($result) == 1) {
 		//Pass
-			$query = "INSERT INTO `users` (`firstname`, `lastname`, 'phonenumber', `username`, `password`, 'doctorid') VALUES ('$firstname', '$lastname', '$phonenumber', '$email','$password', '$doctorid')";
+			$query = "INSERT INTO `users` (`firstname`, `lastname`, 'phonenumber', `username`, `password`) VALUES ('$firstname', '$lastname', '$phonenumber', '$email','$password')";
 			if ($conn->query($query) === TRUE) {
 				$message = "Your account details were sucessfully updated"; 
 			} else {
@@ -55,7 +53,7 @@
 <html> 
 	<script src="https://kit.fontawesome.com/56b24aa4ed.js" crossorigin="anonymous"></script>
 	<head>
-		<title>Online Medical Centre - Doctor</title> <!-- page title in tab -->
+		<title>Online Medical Centre - Patient</title> <!-- page title in tab -->
 		<link rel="stylesheet" href="WebsiteStyling.css"> <!-- The css file -->
 		<script src="WebsiteScript.js"></script> <!-- the javascript file -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- icon file -->
@@ -64,22 +62,20 @@
 		<!-- fixed top navigation bar -->
 		<header>
 			<div class="navigation" id="nav"> 
-				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
+				<a id="websiteHeading" href="#websiteHeading" onclick="window.location.href='PAT-HomePage.htm'"><i class="fas fa-clinic-medical"></i><b> Online Medical Centre</b></a>
 				<div class="navbar-right">
-					<a href="#home" onclick="window.location.href='DOC-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
-					<a href="#consultations" onclick="window.location.href='DOC-ConsultationPage.htm'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>    21
-					<a href="#accountSettings" onclick="window.location.href='DOC-UserSettingPage.htm'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
-					<a href="#logout" onclick="window.location.href='MAIN-LandingPage.htm'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
+					<a href="#home" onclick="window.location.href='PAT-HomePage.htm'"><i class="fas fa-home"></i><b> Home</b></a>
+					<a href="#consultations" onclick="window.location.href='PAT-ConsultationPage.php'"><i class="fas fa-calendar-alt"></i><b> Consulations</b></a>
+					<a href="#accountSettings" onclick="window.location.href='PAT-UserSettingPage.php'"><i class="fas fa-user-cog"></i><b> My Account</b></a>
+					<a href="#logout" onclick="window.location.href='index.html'"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a>
 				</div>
-
+				
 				<!-- change to toggle menu if the window size is too small to fit top navigation bar comfortably -->
 				<a href="javascript:void(0);" class="icon" onclick="navbarResize()"> 
 					<i class="fa fa-bars"></i>
 				</a>
 			</div>
 		</header>
-		
-		
 		
 		<!-- <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> --> 
 		
@@ -93,11 +89,12 @@
 				
 				<br>
 				
-				<form class="editDoctorDetails" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-					<div class="editDoctorDetails" id="editDoctorDetails">
+				<form class="editPatientDetails" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+					<div class="editPatientDetails" id="editPatientDetails">
 					
 					<p id="message" name="message"><?php echo $message ?></p>
 					
+					<!-- need to add in way to display user data -->
 						<label for="firstName"><b>First Name</b></label>
 							<input type="text" id="firstName" name="FirstName" value="<?php echo $firstname ?>" required>
 								
@@ -113,17 +110,7 @@
 						<label for="password"><b>Password</b></label>
 							<input type="password" name="password" value="<?php echo $password ?>" required>
 						
-						<label for="doctorId"><b>Doctor ID</b> (This will be used to verify if you a doctor, verification is completed via a third party service.)</label>
-							<input type="text" name="doctorId" value="<?php echo $doctorid ?>" required>
-						
 						<br>
-						
-						<br>
-						
-						<div class="certUpload">
-							<label for="fileUpload"><b>Accreditation/certification documents (OPTIONAL)</b><img src="uploadIcon.png"/></label>
-							<input id="fileUpload" type="file">
-						</div>
 						
 						<br>
 						
