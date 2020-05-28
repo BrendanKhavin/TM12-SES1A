@@ -10,14 +10,3 @@ function navbarResize() {
 	}
 }
 
-//form validation for login
-
-
-//remember me function for login
-
-
-//form validation for enquiry
-
-
-//form validation for sign up
-
