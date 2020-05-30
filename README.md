@@ -35,6 +35,8 @@ Link to GoogleDoc for user stories linked to tasks: https://docs.google.com/docu
 
 Link to GoogleDoc for stakeholder analysis: https://docs.google.com/document/d/1vR7QHBYc7BxPgPfUO2QReqwUicPI6brfqS8sZQuul9Q/edit?usp=sharing
 
+Link to GoogleDoc for Bug list: https://docs.google.com/document/d/1jTkMVT-3Dx7bmflH1Op9daEfltmZqvtI8nMO65SDGok/edit?usp=sharing
+
 Link to GoogleSlides for presentation: https://docs.google.com/presentation/d/1cicyIJzHsECtnBEVDKLNCJy2PE1VN4kOhEf2umLaCtE/edit?usp=sharing
 
 Trello Board Link: https://trello.com/b/90W8uJXZ/sprint-i
