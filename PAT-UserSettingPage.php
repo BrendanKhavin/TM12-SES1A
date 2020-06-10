@@ -17,6 +17,7 @@
 			$phonenumber = $row['phonenumber'];
 			$email = $row['username'];
 			$password = $row['password'];
+		}
 		
 	}
 	
