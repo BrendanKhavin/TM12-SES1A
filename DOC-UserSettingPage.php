@@ -18,6 +18,7 @@
 			$email = $row['username'];
 			$password = $row['password'];
 			$doctorid = $row['doctorid'];
+		}
 		
 	}
 	
