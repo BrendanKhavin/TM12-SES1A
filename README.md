@@ -18,6 +18,16 @@ The file titled **WebsiteSkeletonStructure-[DO-NOT-EDIT].htm** is a skeleton fil
 
 There are some forms in the website that will collect data and sent it to a database. On successful and not successful data entry, different pages may be shown accordingly. Pages that have been marked as **[Success]** indicate the page that the user is taken to upon successful data entry, the pages marked as **[Failure]** indicate the page the user is taken to for unsuccessful data entry.
 
+The file titled **sql12_freesqldatabase_com.sql.zip** refers to the MySQL database tables that will be imported into phpMyAdmin.
+
+Files prepended with **chat** refer to documents used to create the chat function, this includes the layout and styling of the function.
+
+Files appended with **handler** refer to the PHP script that is used to transfer data from the user interface of the website to the database.
+
+**favicon.ico** refers to the icon file used to display an icon for the website within the tab of the web-browser.
+
+Files with the extension **.png** refer to images that are used within the website.
+
 ## Access links to associated documents 
 Link to GoogleDoc (Assessment 1): https://drive.google.com/file/d/1FgEbFyOF5jvtokhMUGlnfgt2DARjua4G/view
 
@@ -38,5 +48,7 @@ Link to GoogleDoc for stakeholder analysis: https://docs.google.com/document/d/1
 Link to GoogleDoc for Bug list: https://docs.google.com/document/d/1jTkMVT-3Dx7bmflH1Op9daEfltmZqvtI8nMO65SDGok/edit?usp=sharing
 
 Link to GoogleSlides for presentation: https://docs.google.com/presentation/d/1cicyIJzHsECtnBEVDKLNCJy2PE1VN4kOhEf2umLaCtE/edit?usp=sharing
+
+Link to GoogleDoc for User Manual: https://drive.google.com/file/d/1YjwSDip0Bb1gG1DbnvynlMY6bVDNJCxn/view?usp=sharing
 
 Trello Board Link: https://trello.com/b/90W8uJXZ/sprint-i
