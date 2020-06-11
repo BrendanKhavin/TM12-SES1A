@@ -1,9 +1,9 @@
 <!-- view patient referrals -->
 
 <?php
-	$dbhost = "sql12.freesqldatabase.com";
-	 $dbuser = "sql12337112";
-	 $dbpass = "yacY8zPDxP";
+	$dbhost = "localhost";
+	$dbuser = "root";
+	$dbpass = "password";
 	 $db = "sql12337112";
 	 $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
 	 $doclastname = "smith"; 

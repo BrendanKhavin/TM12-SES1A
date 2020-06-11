@@ -1,9 +1,9 @@
 <!-- DOCTOR SETTINGS PAGE -->
 
 <?php 
-	$dbhost = "sql12.freesqldatabase.com";
-	 $dbuser = "sql12337112";
-	 $dbpass = "yacY8zPDxP";
+$dbhost = "localhost";
+	$dbuser = "root";
+	$dbpass = "password";
 	 $db = "sql12337112";
 	 $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
 	 $username = "karen"; 
@@ -32,7 +32,7 @@
 	
 	//if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if(isset($_POST['submit'])) {
-		if (empty($firstname) || empty($lastname) || empty($email) || empty($password)) || empty($doctorid) { 
+		if (empty($firstname) || empty($lastname) || empty($email) || empty($password) || empty($doctorid)) { 
 		$message = "Please fill in all fields"; 
 		}
 	} else { 
